@@ -1,6 +1,5 @@
 <template>
   <div class="main">
-    <div class="card"></div>
     <div class="card1">
       <div class="a">
         <div class="border1"></div>
@@ -21,7 +20,7 @@
         </p>
       </div>
     </div>
-    <div  class="card-coin">
+    <div class="card-coin">
       <div v-for="(item, index) in card" :key="index" class="item-card">
         <div class="item1">
           <img src="../static/Weserve Token-06.png" />
@@ -34,9 +33,10 @@
 </template>
 
 <style scoped>
- .main {
-  background-color:#F4F4F4;
+.main {
+  background-color: #F4F4F4;
 }
+
 .border1 {
   top: 1240px;
   left: 116px;
@@ -45,6 +45,7 @@
   border: 2px solid #fdd000;
   opacity: 1;
 }
+
 .card {
   display: flex;
   justify-content: space-around;
@@ -58,21 +59,24 @@
   width: 220px;
   height: 130px;
   text-align: center;
-  font-size: 70px;
+  font-size: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .card1 {
   display: flex;
   justify-content: space-evenly;
   background: #f4f4f4;
 }
+
 .a {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .detail {
   margin-top: 52px;
   text-align: center;
@@ -84,6 +88,7 @@
   opacity: 1;
   font-family: Mitr;
 }
+
 .item1 {
   width: 311px;
   height: 313px;
@@ -92,25 +97,33 @@
   background-color: #ffffff;
   box-shadow: 5px 10px yellow;
 }
-.card-coin{
-    margin-top: 95px;
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 188px;
-}
 
+.card-coin {
+  margin-top: 95px;
+  display: flex;
+  justify-content: space-evenly;
+
+}
 </style>
 
 <script>
 export default {
-    data() {
+  data() {
     return {
-      card: [{photo:'../static/Weserve Token-06.png',
-        title:"2222M",detail:"Total"},{photo:"../static/Weserve Token-06.png",
-        title:"2222M",detail:"Total"},{photo:"../static/Weserve Token-06.png",
-        title:"2222M",detail:"Total"},{photo:"../static/Weserve Token-06.png",
-        title:"2222M",detail:"Total"}],
+      card: [{
+        photo: "Weserve Token-06.png",
+        title: "2222M", detail: "Total"
+      }, {
+        photo: "Weserve Token-06.png",
+        title: "2222M", detail: "Total"
+      }, {
+        photo: "Weserve Token-06.png",
+        title: "2222M", detail: "Total"
+      }, {
+        photo: "Weserve Token-06.png",
+        title: "2222M", detail: "Total"
+      }],
     };
-}
+  }
 }
 </script>

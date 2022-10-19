@@ -1,31 +1,32 @@
 <template>
-<div>
-   <div class="back">
-    <img class="coin" src="../static/Group 5266.png" />
-    <div class="text-content">
-      <h1>{{ title }}</h1>
-      <p >Discover the next-level digital asset</p>
-      <p >trading experience on a regulated platfrom</p>
-      <img class="coin2" src="../static/Group 5266.png" />
+  <div>
+    <div class="back">
+      <img class="coin" src="../static/Group 5266.png" />
+      <div class="text-content">
+        <v-btn class="d-none"></v-btn>
+        <h1 class="d-none d-sm-flex">{{ title }}</h1>
+        <p>Discover the next-level digital asset</p>
+        <p>trading experience on a regulated platfrom</p>
+        <img class="coin2" src="../static/Group 5266.png" />
+      </div>
+      <img class="foot-photo" src="../static/Path 1910.png" />
     </div>
-    <img class="foot-photo" src="../static/Path 1910.png" />
-  </div> 
-  <Card />
-</div>
+    <Card />
+  </div>
 </template>
 
 <script>
 import Card from './Card.vue';
 import Nav from './Nav.vue';
 export default {
-    comments:{Card},
-    name: "Nav",
-    data() {
-        return {
-            title: "WESERVE TOKEN (WE)",
-        };
-    },
-    components: { Card, Nav }
+  comments: { Card },
+  name: "Nav",
+  data() {
+    return {
+      title: "WESERVE TOKEN (WE)",
+    };
+  },
+  components: { Card, Nav }
 };
 </script>
 
@@ -40,12 +41,14 @@ export default {
   overflow: hidden;
   position: relative;
 }
+
 .text-content {
   position: absolute;
   top: 403px;
   left: 153px;
   font-size: 25px;
 }
+
 .foot-photo {
   position: absolute;
   top: 895px;
@@ -55,18 +58,21 @@ export default {
   width: 2176px;
   height: 544px;
 }
+
 .coin {
   width: 204px;
   height: 226px;
   transform: matrix(0.97, -0.24, 0.24, 0.97, 0, 0);
   opacity: 0.52;
 }
+
 h1 {
   font: normal normal bold 70px/106px Poppins;
   letter-spacing: 3.5px;
   color: #6b420b;
   opacity: 1;
 }
+
 .coin2 {
   position: absolute;
   top: 10px;
@@ -75,11 +81,14 @@ h1 {
   height: 754px;
   transform: matrix(0.97, 0.24, -0.24, 0.97, 0, 0);
 }
-p{
-    text-align: center;
-font: normal normal normal 35px/53px Poppins;
-letter-spacing: 0.88px;
-color: #6B420B;
-opacity: 1;
+
+p {
+  font-family: 'Mitr', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font: normal normal normal 35px/53px Poppins;
+  letter-spacing: 0.88px;
+  color: #6B420B;
+  opacity: 1;
 }
 </style>
