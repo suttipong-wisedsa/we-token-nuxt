@@ -8,7 +8,7 @@
       <div class="menu">
         <ul class="list">
           <li v-for="(item, index) in menu" :key="index">
-            <a :href="item.path">{{item.li}}</a>
+            <a :href="item.path" class="text">{{item.li}}</a>
           </li>
         </ul>
         <div class="ham-active">
@@ -22,17 +22,17 @@
         </div>
       </div>
     </div>
-    <div v-if="check">
+    <!-- <div v-if="check"> -->
       <!--Toggle-->
-      <div class="Nav-hide .active">
+      <!-- <div class="Nav-hide .active">
         กดกดกด
       </div>
-    </div>
-    <div v-else>
+    </div> -->
+    <!-- <div v-else>
       <div>
         dfdfdf
       </div>
-    </div>
+    </div> -->
   </nav>
 </template>
 
@@ -75,7 +75,15 @@ html {
   top: -100%;
   transition: 3s;
 }
-
+.text{
+  text-decoration: none;
+  margin-left: 1rem;
+  text-align: center;
+font: normal normal 300 25px/38px Poppins;
+letter-spacing: 0.63px;
+color: #FFFFFF;
+opacity: 1;
+}
 .Nav-hide .active {
   top: 0;
 }
@@ -105,32 +113,19 @@ body {
 .menu {
   display: flex;
   align-items: center;
+  flex-direction: row;
 }
-
+.list{
+  display: flex;
+  list-style-type: none;
+  margin:2rem
+}
 .logo h1 {
   margin-left: 12px;
   margin-top: 15px;
 }
 
-li a {
-  color: aliceblue;
-  margin-left: 4rem;
-  margin-right: 2rem;
-  font: normal normal 300 25px/38px Poppins;
-}
 
-li {
-  list-style-type: none;
-  text-decoration: none;
-}
-
-ul {
-  display: flex;
-}
-
-a {
-  text-decoration: none;
-}
 
 .ham-active {
   display: none;
@@ -158,14 +153,17 @@ a {
   margin-bottom: 5px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 820px) {
   .ham-active {
     display: block;
   }
 
-  .list {
+  .Navbar{
+    height: 75px;
+    width: 100%;
+  }
+  .text{
     display: none;
   }
-
 }
 </style>
