@@ -1,10 +1,8 @@
 <template>
-  <!-- <v-app> -->
-    <div style="width: 100vw">
-      <Nav :check="check" />
-      <Content />
-    </div>
-  <!-- </v-app> -->
+  <v-app>
+    <Nav :check="check" />
+    <Content />
+  </v-app>
 </template>
 
 <script>

@@ -1,63 +1,58 @@
 <template>
-  <div>
-    <div class="back-in">
-      <Nav check="check" />
-      <div class="head">
-        <div class="topic">
-          <a class="topic-big">WE TOKEN</a>
-          <span>CAMPAIGN</span>
-        </div>
-      </div>
-      <Cardcontent />
+  <v-app>
+    <div>
+      <Nav />
+      <v-card class="d-flex align-center justify-center mt-12" flat height="100" tile>
+        <v-card outlined tile>
+          <h1>WE TOKEN CAMPAIGN</h1>
+        </v-card>
+      </v-card>
+      <!--Header-->
+      <v-container>
+        <v-row justify="center">
+          <v-col v-for="(i, index) in card" :key="index" cols="auto">
+            <!--card-->
+            <v-card>
+              <v-img object-fit="cover" height="266" width="556" opaciti="1" class="white mx-auto my-12 rounded-lg">
+                <img src="../static/Untitled-3.png" />
+              </v-img>
+              <div>
+                <h1>WE TOKEN x WESERVE</h1>
+                <img src="../static/Weserve Logo-01.png" />
+              </div>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+      <v-title backgourd="red">
+        <v-title>
+          <v-img>
+            <img src="../static/Weserve Logo-01.png" />
+          </v-img>
+          <v-title>
+            <h1>WE TOKEN</h1>
+          </v-title>
+        </v-title>
+      </v-title>
     </div>
-    <Footer />
-  </div>
+  </v-app>
 
 </template>
 <script>
-import Cardcontent from '~/components/Cardcontent.vue';
 import Footer from '~/components/Footer.vue';
 import Nav from '~/components/Nav.vue'
 export default {
 
   name: "Campaign",
-  components: { Cardcontent, Footer, Nav },
-
+  components: { Footer, Nav },
+  data() {
+    return {
+      card: ['1', '2', '3'],
+    };
+  }
 }
-
 </script>
-<style >
-.back-in {
-  background-color: #F4F4F4;
-  height: 800px;
-}
 
-.head {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 242px;
-  background-color: #F4F4F4;
-}
+<style scoped>
 
-.topic-big {
-  text-align: left;
-  font: normal normal 800 45px/58px Sarabun;
-  letter-spacing: 4.5px;
-  opacity: 1;
-  color: #FDD000;
-}
-
-.topic span {
-  text-align: left;
-  font: normal normal 800 45px/58px Sarabun;
-  letter-spacing: 4.5px;
-  opacity: 1;
-  color: #767484;
-}
-
-.card {
-  display: flex;
-  justify-content: center;
-}
 </style>

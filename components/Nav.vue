@@ -3,7 +3,7 @@
     <div class="Navbar">
       <div class="logo">
         <img src="../static/photologo.png" alt="logo" />
-        <h1>WE TOKEN</h1>
+        <h1 class="d-flex justify-center align-center mx-3">WE TOKEN</h1>
       </div>
       <div class="menu">
         <ul class="list">
@@ -23,8 +23,8 @@
       </div>
     </div>
     <!-- <div v-if="check"> -->
-      <!--Toggle-->
-      <!-- <div class="Nav-hide .active">
+    <!--Toggle-->
+    <!-- <div class="Nav-hide .active">
         กดกดกด
       </div>
     </div> -->
@@ -75,15 +75,17 @@ html {
   top: -100%;
   transition: 3s;
 }
-.text{
+
+.text {
   text-decoration: none;
   margin-left: 1rem;
   text-align: center;
-font: normal normal 300 25px/38px Poppins;
-letter-spacing: 0.63px;
-color: #FFFFFF;
-opacity: 1;
+  font: normal normal 300 25px/38px Poppins;
+  letter-spacing: 0.63px;
+  color: #FFFFFF;
+  opacity: 1;
 }
+
 .Nav-hide .active {
   top: 0;
 }
@@ -115,17 +117,12 @@ body {
   align-items: center;
   flex-direction: row;
 }
-.list{
+
+.list {
   display: flex;
   list-style-type: none;
-  margin:2rem
+  margin: 2rem
 }
-.logo h1 {
-  margin-left: 12px;
-  margin-top: 15px;
-}
-
-
 
 .ham-active {
   display: none;
@@ -158,11 +155,12 @@ body {
     display: block;
   }
 
-  .Navbar{
+  .Navbar {
     height: 75px;
     width: 100%;
   }
-  .text{
+
+  .text {
     display: none;
   }
 }
