@@ -1,10 +1,9 @@
 <template>
   <div>
-    <v-card class="d-flex pa-5 justify-center " outlined tile>
-      <p>
-        WE Token, a decentralized digital asset lending business developed by WESERVE PLATFORM Co.,Ltd. is a platform
-        that incorporates centralized finance with decentralized finance (CeDeFi).
-      </p>
+    <v-card class="d-flex align-center justify-center mt-12" flat height="100" >    <!--flat เอาเส้นออก--> 
+          <h1>-</h1> 
+          <h1>WE TOKEN CAMPAIGN</h1> 
+          <h1>-</h1> 
     </v-card>
     <v-container>
       <v-row justify="center">
