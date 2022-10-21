@@ -2,14 +2,9 @@
   <v-app>
     <div>
       <Nav />
-      <v-card
-        class="d-flex align-center justify-center mt-12"
-        flat
-        height="100"
-        tile
-      >
-        <v-card outlined tile>
-          <h1>WE TOKEN CAMPAIGN</h1>
+      <v-card class="d-flex align-center justify-center" flat height="200" tile>
+        <v-card tile flat>
+          <h1 class="red--text">WE TOKEN CAMPAIGN</h1>
         </v-card>
       </v-card>
       <!--Header-->
@@ -19,13 +14,7 @@
             <!--card-->
             <div class="hover">
               <v-card @click="getPage(index)">
-                <v-img
-                  object-fit="cover"
-                  height="266"
-                  width="556"
-                  opaciti="1"
-                  class="white mx-auto my-8 rounded-lg"
-                >
+                <v-img object-fit="cover" height="266" width="556" opaciti="1" class="white mx-auto my-1 rounded-lg">
                   <img :src="require(`@/static/${i.url}`)" />
                 </v-img>
                 <v-card-text class="d-flex justify-space-between mb-15">
@@ -39,16 +28,7 @@
           </v-col>
         </v-row>
       </v-container>
-      <v-title backgourd="red">
-        <v-title>
-          <v-img>
-            <img :src="require(`@/static/${img}`)" />
-          </v-img>
-          <v-title>
-            <h1>WESERVE</h1>
-          </v-title>
-        </v-title>
-      </v-title>
+      <Footer />
     </div>
   </v-app>
 </template>
@@ -86,6 +66,6 @@ export default {
 
 <style scoped>
 .hover:hover {
-  box-shadow: 0px 0px 5px 13px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 3px 17px 19px rgba(0, 0, 0, 0.11);
 }
 </style>

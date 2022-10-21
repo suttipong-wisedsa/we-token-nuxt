@@ -1,7 +1,6 @@
 <template>
-  <div>
+  <v-app>
     <div class="back">
-      <!-- <img class="coin" src="../static/Group 5266.png" /> -->
       <div class="center">
         <h1>{{title}}</h1>
         <div class="container">
@@ -10,12 +9,9 @@
           <p class="mx-5">on a regulated platform.</p>
         </div>
       </div>
-      <!-- <div class="head-photo">
-        <img class="foot-photo" src="../static/Path 1910.png" />
-      </div> -->
     </div>
     <Card />
-  </div>
+  </v-app>
 </template>
 
 <script>
@@ -41,10 +37,10 @@ export default {
 }
 
 .back {
-  background-image: url("../static/back.png");
+  background-image: url("../static/landing.jpg");
   width: 100%;
   background-size: 100% 100%;
-  height: 50rem;
+  height: 70rem;
   position: relative;
 }
 
@@ -73,9 +69,9 @@ h1 {
 
 @media screen and (max-width: 820px) {
   .back {
-    background-image: url("../static/bg-mb.png");
+    background-image: url("../static/landing.jpg");
     width: 100%;
-    height: 20.063rem;
+    height: 30.063rem;
     position: relative;
   }
 
