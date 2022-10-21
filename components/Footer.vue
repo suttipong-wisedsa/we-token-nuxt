@@ -10,7 +10,7 @@
         <v-card-text class="white--text">
           WE TOKEN
         </v-card-text>
-        <v-card-text class="d-flex">
+        <v-card-text class="d-flex ">
           <v-card-text>
             <h3 class="my-2 white--text">Company</h3>
             <h4 class="my-2 white--text">About</h4>
@@ -21,6 +21,7 @@
             <h4 class="my-2 white--text">WE Token NEWS</h4>
             <h4 class="my-2 white--text">FAQ</h4>
           </v-card-text>
+          <!--icon-->
           <v-card-text>
             <h3 class="my-1 white--text">Social Media</h3>
             <v-text class="d-flex">
@@ -39,10 +40,10 @@
         </v-card-text>
       </v-card-text>
       <v-divider class="white"></v-divider>
-      <v-card-text>
-      </v-card-text>
+      <!-- <v-card-text>
+      </v-card-text> -->
       <v-card-text class="white--text text-center">
-        <p>&copy;Copyright 2021 All Rights Reserved</p>
+        <p class="my-2">&copy;Copyright 2021 All Rights Reserved</p>
       </v-card-text>
     </v-card>
   </v-footer>

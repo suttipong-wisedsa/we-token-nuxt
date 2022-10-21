@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <Nav :check="check" />
+    <Nav  :check="check"/>
     <Content />
   </v-app>
 </template>
@@ -12,13 +12,6 @@ import Content from '~/components/Content.vue'
 export default {
   name: "IndexPage",
   components: { Nav, Content },
-  props: {
-    show: {
-      type: Boolean,
-      required: true,
-      default: false
-    },
-  },
   data() {
     return {
       check: false,
