@@ -2,40 +2,12 @@
   <v-app>
     <div class="back">
       <div class="center">
-        <h1>{{ title }}</h1>
-        <div class="container">
-          <p class="mx-5">Discover the next-level</p>
-          <p>digital asset trading experience</p>
-          <p class="mx-5">on a regulated platform.</p>
-        </div>
+        <div class="container"></div>
       </div>
     </div>
-    <Card />
-    <Partners />
-    <News />
-    <Cardfooter />
-    <HomeFoort />
+    <Footer/>
   </v-app>
 </template>
-
-<script>
-import Card from "./Card.vue";
-import Nav from "./Nav.vue";
-import Partners from "./Partners.vue";
-import News from "./News.vue";
-import Cardfooter from "./Cardfooter.vue";
-import HomeFoort from "./Home-foort.vue";
-export default {
-  comments: { Card },
-  name: "Nav",
-  data() {
-    return {
-      title: "WESERVE TOKEN (WE)",
-    };
-  },
-  components: { Card, Nav, Partners, News, Cardfooter, HomeFoort },
-};
-</script>
 
 <style scoped>
 .foot-photo {
@@ -45,7 +17,7 @@ export default {
 }
 
 .back {
-  background-image: url("../static/landing.jpg");
+  background-image: url("../static/landing3.png");
   width: 100%;
   background-size: 100% 100%;
   height: 70rem;
@@ -73,7 +45,7 @@ h1 {
 
 @media screen and (max-width: 820px) {
   .back {
-    background-image: url("../static/landing.jpg");
+    background-image: url("../static/landing3.png");
     width: 100%;
     height: 30.063rem;
     position: relative;

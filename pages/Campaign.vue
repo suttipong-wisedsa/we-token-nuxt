@@ -1,12 +1,13 @@
 <template>
-  <v-app>
-    <div>
+  <v-app class="bg-1">
+    <div class="bg">
       <Nav />
-      <v-card class="d-flex align-center justify-center" flat height="200" tile>
-        <v-card tile flat>
-          <h1 class="red--text">WE TOKEN CAMPAIGN</h1>
-        </v-card>
-      </v-card>
+      <v-row class="d-flex align-center justify-center" flat height="200" tile>   
+          <v-text class="my-15">
+            <h1 class="text-1">WE TOKEN</h1>
+          </v-text>   
+            <h1 class="text-2">CAMPAIGN</h1>
+      </v-row>
       <!--Header-->
       <v-container>
         <v-row justify="center">
@@ -14,13 +15,19 @@
             <!--card-->
             <div class="hover">
               <v-card @click="getPage(index)">
-                <v-img object-fit="cover" height="266" width="556" opaciti="1" class="white mx-auto my-1 rounded-lg">
-                  <img :src="require(`@/static/${i.url}`)" />
-                </v-img>
+                <div class="v-img"
+                  object-fit="cover"
+                  height="15vw"
+                  width="100%"
+                  opaciti="1"
+                  
+                >
+                  <img :src="require(`@/static/${i.url}`)" alt="img" class="responsive"/>
+                </div>
                 <v-card-text class="d-flex justify-space-between mb-15">
                   <v-card-text class="d-flex">
-                    <img src="../static/Weserve Logo-01.png" />
-                    <h1 class="">{{ i.title }}</h1>
+                    <img  src="../static/Weserve Logo-01.png"/>
+                    <h1 style="font-size:1vw">{{ i.title }}</h1>
                   </v-card-text>
                 </v-card-text>
               </v-card>
@@ -28,8 +35,8 @@
           </v-col>
         </v-row>
       </v-container>
-      <Footer />
     </div>
+    <Footer />
   </v-app>
 </template>
 <script>
@@ -42,8 +49,8 @@ export default {
     return {
       imgs: [
         { url: "Untitled-3.png", title: "WE TOKEN x WESERVE" },
-        { url: "photo3.png", title: "WE TOKEN x WE SMART EXPRESS" },
-        { url: "photo1.png", title: "WE TOKEN x Manager Dashboard" },
+        { url: "photo1.png", title: "WE TOKEN x WE SMART EXPRESS" },
+        { url: "photo3.png", title: "WE TOKEN x Manager Dashboard" },
       ],
       img: "Weserve Logo-01.png",
       setRouter: Number,
@@ -65,7 +72,31 @@ export default {
 </script>
 
 <style scoped>
+.responsive {
+  width: 100%;
+  height: auto;
+}
 .hover:hover {
   box-shadow: 2px 3px 17px 19px rgba(0, 0, 0, 0.11);
+}
+.bg {
+  
+  margin-bottom: 2rem;
+}
+.text-1{
+  color:#FDD000;
+  font-size: 2vw;
+}
+.text-2{
+  color: #767484;
+  font-size: 2vw;
+}
+.bg-1{
+  background-color: #f4f4f4;
+}
+@media (max-width: 800px) {
+  .v-img{
+    height: 50vw;
+  }
 }
 </style>
