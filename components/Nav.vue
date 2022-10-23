@@ -1,9 +1,9 @@
 <template>
-  <nav>
+  <nav class="bg">
     <div class="Navbar">
       <div class="logo">
         <img src="../static/photologo.png" alt="logo" />
-        <h2 class="d-flex justify-center align-center mx-3" style="font-size:2.3vw" >WE TOKEN</h2>
+        <h2 class="d-flex justify-center align-center mx-3" style="font-size:1.8vw" >WE TOKEN</h2>
       </div>
       <div class="menu">
         <ul class="list">
@@ -77,6 +77,7 @@
       </ul>
     </div>
   </nav>
+  
 </template>
 
 <script>

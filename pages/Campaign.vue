@@ -1,6 +1,6 @@
 <template>
   <v-app class="bg-1">
-    <div class="bg">
+    <div>
       <Nav />
       <v-row class="d-flex align-center justify-center" flat height="200" tile>   
           <v-text class="my-15">
