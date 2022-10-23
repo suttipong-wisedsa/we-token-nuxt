@@ -12,4 +12,3 @@
    </v-row>
   </a-app>
 </template>
-

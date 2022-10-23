@@ -1,22 +1,20 @@
 <template>
   <div class="main-bg">
     <v-container>
-      <v-row >
+      <v-row class="mt-10">
         <v-col class="d-flex justify-center">
-          <h1>The most trusted cryptocurrency platform</h1>
+          <h1 class="textcardfooter1--text">The most trusted cryptocurrency platform</h1>
         </v-col>
       </v-row>
-      <v-row >
-        <v-col class="d-flex justify-center">
-          <p>The most trusted cryptocurrency platform</p>
+        <v-col class="d-flex justify-center mb-10 ">
+          <p class="textcardfooter2--text">The most trusted cryptocurrency platform</p>
         </v-col>
-      </v-row>
         <v-row justify="center">
           <v-col v-for="(item, index) in card" :key="index">
             <!--card-->           
-              <v-card height="189.66" width="250" class="black mx-auto ">
+              <v-card height="189.66" width="250" class=" mx-auto cardyellow">
                 <v-row  justify="center" >
-                  <v-col class="d-flex justify-center align-center">
+                  <v-col class="d-flex justify-center align-center ">
                     <img src="../static/facebook.png"/>
                   </v-col>
                 </v-row>
@@ -65,6 +63,6 @@ export default {
 </script>
 <style>
 .main-bg{
-  background-color:#FFFFFF;
+  background-color:#E8E8EA
 }
 </style>

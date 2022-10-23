@@ -4,9 +4,8 @@
       <div class="center">
         <h1>{{ title }}</h1>
         <div class="container">
-          <p class="mx-5">Discover the next-level</p>
-          <p>digital asset trading experience</p>
-          <p class="mx-5">on a regulated platform.</p>
+          <p class="mx-10 hometext--text" style="font-size:1.8vw; ">Discover the next-level digital asset</p>
+          <p class="hometext--text" style="font-size:1.8vw"> trading experience on a regulated platform.</p>
         </div>
       </div>
     </div>
@@ -45,7 +44,7 @@ export default {
 }
 
 .back {
-  background-image: url("../static/landing.jpg");
+  background-image: url("../static/bghome.png");
   width: 100%;
   background-size: 100% 100%;
   height: 70rem;

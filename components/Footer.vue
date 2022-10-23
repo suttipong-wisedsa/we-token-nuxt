@@ -1,6 +1,6 @@
 <template>
   <div>
-      <v-row class="my-3 bg">
+      <v-footer class="my-3 bg">
         <v-col class="mx-15">
           <v-col class="d-flex align-center">
             <img src="../static/Weserve Token-06.png" />
@@ -45,7 +45,7 @@
             <p class="white--text my-4 mx-2">Our Partner</p>
           </v-col>
         </v-col>
-      </v-row>
+      </v-footer>
       <div class="line"></div>
     <v-row class="bg">
       <v-col class="white--text d-flex align-self-center justify-center"

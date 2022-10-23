@@ -47,7 +47,7 @@ h1 {
   .back {
     background-image: url("../static/landing3.png");
     width: 100%;
-    height: 30.063rem;
+    height: 25rem;
     position: relative;
   }
 

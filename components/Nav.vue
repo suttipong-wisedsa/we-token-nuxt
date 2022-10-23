@@ -3,7 +3,7 @@
     <div class="Navbar">
       <div class="logo">
         <img src="../static/photologo.png" alt="logo" />
-        <h2 class="d-flex justify-center align-center mx-3" style="font-size:1.8vw" >WE TOKEN</h2>
+        <h2 class="d-flex justify-center align-center mx-3" style="font-size: calc(1vh + 10px);" >WE TOKEN</h2>
       </div>
       <div class="menu">
         <ul class="list">
@@ -17,7 +17,7 @@
               <img class="hide" src="../static/youtube.png" @click="OnclickTab" />
             </div>     
             <div>
-              <a class="hide" style="font-size: 25px">English</a>
+              <a class="hide" style="font-size: 25px; color:aliceblue">English</a>
             </div>
             </div>
           </div>
@@ -48,19 +48,19 @@
     <div v-if="check" class="menu">
       <ul class="list-menu">
         <div style="margin-top: 0.5rem">
-          <a href="#">Token info</a>
+          <a href="#" class="textmenu--text">Token info</a>
         </div>
         <div class="line"></div>
         <div style="margin-top: 1.5rem">
-          <a href="#">News</a>
+          <a href="#" class="textmenu--text">News</a>
         </div>
         <div class="line"></div>
         <div style="margin-top: 1.5rem">
-          <a href="#">Contact</a>
+          <a href="#" class="textmenu--text">Contact</a>
         </div>
         <div class="line"></div>
         <div style="margin-top: 1.5rem">
-          <a href="/Campaign">Campaign</a>
+          <a href="/Campaign" class="textmenu--text">Campaign</a>
         </div>
         <div class="line"></div>
         <div

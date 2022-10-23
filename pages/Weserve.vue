@@ -8,23 +8,30 @@
             <a
               href="./Campaign"
               style="text-decoration: none; font-size: calc(1.5vh + 7px)"
-              class="text"
-              >Campaign</a
+              class="textcontent--text"
+              >WE TOKEN CAMPAIGN</a
             >
-            <h1 style="font-size: 3rem" class="mx-5">></h1>
+            <h1 style="font-size: 2rem" class="text-center mx-3 textcontent--text">></h1>
             <img
               src="../static/Weserve Token-06.png"
               style="height: 33px; width: 34px"
             />
             <a style="font-size: calc(1vh + 7px); color: #fdd000" class="mx-2"
-              >TOKEN X Manager Dashboard</a
+              >WE TOKEN X</a
+            >
+            <img
+              src="../static/Weserve Logo-01.png"
+              style="height: 33px; width: 34px"
+            />
+            <a style="font-size: calc(1vh + 7px); color: #fdd000" class="mx-2"
+              >WE SMART EXPRESS</a
             >
           </v-col>
         </v-row>
         <v-card class="my-10">
           <v-container>
             <v-col>
-              <h1 style="font-size: calc(1vh + 10px)">WE TOKEN x WESERVE</h1>
+              <h1 style="font-size: calc(2vh + 15px)">WE TOKEN x WESERVE</h1>
             </v-col>
             <v-img class="mx-8">
               <img
@@ -39,17 +46,17 @@
             <v-col>
               <v-card-text> 01 Oct, 2022 </v-card-text>
               <v-card-text>
-                <p style="font-size: calc(1vh + 10px)">
+                <p style="font-size: calc(1vh + 10px); text-indent: 50px;">
                   {{ data }}
                 </p>
               </v-card-text>
               <v-card-text>
-                <p style="font-size: calc(1vh + 10px)">
+                <p style="font-size: calc(1vh + 10px); text-indent: 50px;">
                   {{ data }}
                 </p>
               </v-card-text>
               <v-card-text>
-                <p style="font-size: calc(1vh + 10px)">
+                <p style="font-size: calc(1vh + 10px); text-indent: 50px;">
                   {{ data }}
                 </p>
               </v-card-text>
@@ -58,7 +65,7 @@
         </v-card>
         <v-row class="mt-15 mb-10">
           <h1 style="font-size: calc(2.5vh + 10px)">
-            Other WE TOKEN CAMPAIGN
+            <a class="textcontent--text">Other</a><a class="textyellow--text">WE TOKEN</a><a class="textcontent--text">CAMPAIGN</a>
           </h1></v-row
         >
         <v-row>
@@ -116,7 +123,7 @@ export default {
     return {
       data: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id nisl finibus Leo porttitor scelerisque. Pellentesque suscipit laoreet mauris, a dignissim ex lacinia nec. Phasellus sed est quis quam interdum faucibus nec sed enim. Ut bibendum volutpat augue at porta. Vivamus placerat viverra lectus, nec mollis sem volutpat a. Duis at feugiat enim, consectetur mollis nulla. Nam felis libero, tincidunt a ultricies sit amet, ultricies sit amet felis. Phasellus at congue dolor. Mauris sed nibh et est ornare tincidunt. Sed ut tristique dui. Pellentesque iaculis sagittis lacinia. Nunc ultricies, quam et imperdiet consectetur, diam erat tincidunt ante, ut tempus felis orci et metus. Sed a diam tempor, ultricies nibh a, congue massa. Nam a justo urna.",
       imgs: [
-        { url: "photo1.png", title: "WE TOKEN x WE SMART EXPRESS" },
+        { url: "Untitled-3.png", title: "WE TOKEN x WE SMART EXPRESS" },
         { url: "photo3.png", title: "WE TOKEN x Manager Dashboard" },
       ],
       img: "Weserve Logo-01.png",
