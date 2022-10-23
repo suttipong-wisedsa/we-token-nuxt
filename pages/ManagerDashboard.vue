@@ -48,12 +48,12 @@
                 </p>
               </v-card-text>
               <v-card-text>
-                <p style="font-size: calc(1vh + 10px)">
+                <p style="font-size: calc(1vh + 10px); text-indent: 50px;">
                   {{ data }}
                 </p>
               </v-card-text>
               <v-card-text>
-                <p style="font-size: calc(1vh + 10px)">
+                <p style="font-size: calc(1vh + 10px); text-indent: 50px;">
                   {{ data }}
                 </p>
               </v-card-text>

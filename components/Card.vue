@@ -3,7 +3,7 @@
     <div class="main">
       <v-container>
         <v-col class="d-flex justify-center" style="height: 15vw">
-          <p class="textcard--text" style="font-size: 2vw; text-indent: 15px">
+          <p class="homecard--text" style="font-size: 2vw; text-indent: 50px">
             WE Token, a decentralized digital asset lending business developed
             by WESERVE PLATFORM Co.,Ltd. is a platform that incorporates
             centralized finance with decentralized finance (CeDeFi).
@@ -45,14 +45,11 @@
             </v-card>
           </v-col>
         </v-row>
-        <div class="d-flex align-center justify-center my-15">
-          <img src="../static/GroupZ.png" />
-        </div>
+        <!-- <Trading /> -->
       </v-container>
     </div>
   </v-app>
 </template>
-
 <style scoped>
 .main {
   background-color: #f4f4f4;
@@ -75,6 +72,7 @@
 <script>
 import Partners from "./Partners.vue";
 import Cardfooter from "./Cardfooter.vue";
+import Trading from "./Trading.vue";
 
 export default {
   data() {
@@ -104,6 +102,6 @@ export default {
       text: "WE Token, a decentralized digital asset lending business developed by WESERVE PLATFORM Co.,Ltd. is a platform that incorporates centralized finance with decentralized finance (CeDeFi).",
     };
   },
-  components: { Partners, Cardfooter },
+  components: { Partners, Cardfooter, Trading },
 };
 </script>

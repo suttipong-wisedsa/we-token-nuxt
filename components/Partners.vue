@@ -1,12 +1,12 @@
 <template>
-  <a-app style="height:10rem" class="yellow ">
-   <v-row class="my-2">
-    <v-col class="d-flex justify-center" >
-      <h3>Trusted by Our Partners & Investors</h3>
+  <a-app style="height:15rem" class="bgpartner">
+   <v-row>
+    <v-col class="d-flex justify-center align-center" style="height:10rem">
+      <h2 style="font-size:3vw;" class="textmenu--text">Trusted by Our Partners & Investors</h2>
     </v-col>
    </v-row>
    <v-row>
-    <v-col class="d-flex justify-center" >
+    <v-col class="d-flex justify-center align-center">
       <img style="" src="../static/partner.png" />
     </v-col>
    </v-row>

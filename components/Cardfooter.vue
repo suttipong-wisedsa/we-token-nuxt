@@ -7,12 +7,12 @@
         </v-col>
       </v-row>
         <v-col class="d-flex justify-center mb-10 ">
-          <p class="textcardfooter2--text">The most trusted cryptocurrency platform</p>
+          <p class="homecard--text">Here are a few reasons why you should choose WE Token</p>
         </v-col>
         <v-row justify="center">
           <v-col v-for="(item, index) in card" :key="index">
             <!--card-->           
-              <v-card height="189.66" width="250" class=" mx-auto cardyellow">
+              <v-card height="189.66" width="250" class=" mx-auto bgpartner">
                 <v-row  justify="center" >
                   <v-col class="d-flex justify-center align-center ">
                     <img src="../static/facebook.png"/>
@@ -20,7 +20,7 @@
                 </v-row>
               </v-card>
               <v-row>
-                <v-col>
+                <v-col class="my-5 px-5">
                   <h1>{{item.title}}</h1>
                   <p>{{item.detail}}</p>
                 </v-col>

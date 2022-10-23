@@ -9,9 +9,10 @@
 
 import Nav from '~/components/Nav.vue';
 import Content from '~/components/Content.vue'
+
 export default {
   name: "IndexPage",
-  components: { Nav, Content },
+  components: { Nav, Content,},
   data() {
     return {
       check: false,

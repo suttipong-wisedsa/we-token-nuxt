@@ -4,12 +4,13 @@
       <div class="center">
         <h1>{{ title }}</h1>
         <div class="container">
-          <p class="mx-10 hometext--text" style="font-size:1.8vw; ">Discover the next-level digital asset</p>
-          <p class="hometext--text" style="font-size:1.8vw"> trading experience on a regulated platform.</p>
+          <p class="mx-10 hometext--text" style="font-size:2vw; ">Discover the next-level digital asset</p>
+          <p class="hometext--text" style="font-size:2vw"> trading experience on a regulated platform.</p>
         </div>
       </div>
     </div>
     <Card />
+    <!-- <Trading/> -->
     <Partners />
     <News />
     <Cardfooter />
@@ -24,6 +25,7 @@ import Partners from "./Partners.vue";
 import News from "./News.vue";
 import Cardfooter from "./Cardfooter.vue";
 import HomeFoort from "./Home-foort.vue";
+import Trading from "./Trading.vue";
 export default {
   comments: { Card },
   name: "Nav",
@@ -32,7 +34,7 @@ export default {
       title: "WESERVE TOKEN (WE)",
     };
   },
-  components: { Card, Nav, Partners, News, Cardfooter, HomeFoort },
+  components: { Card, Nav, Partners, News, Cardfooter, HomeFoort, Trading },
 };
 </script>
 

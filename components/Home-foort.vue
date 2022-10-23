@@ -5,6 +5,7 @@
         <div class="container"></div>
       </div>
     </div>
+    <!-- <Vue-trading-view/> -->
     <Footer/>
   </v-app>
 </template>

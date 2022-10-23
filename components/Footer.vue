@@ -1,62 +1,60 @@
 <template>
   <div>
-      <v-footer class="my-3 bg">
-        <v-col class="mx-15">
-          <v-col class="d-flex align-center">
-            <img src="../static/Weserve Token-06.png" />
-            <h2 class="white--text mx-5">WE SERVE</h2>
-          </v-col>
-          <v-col>
-            <p class="white--text">
-              32/199 Phoonphol rd., Taladnueh, Muang, Phuket 83000
-            </p>
-          </v-col>
-        </v-col>
-        <v-spacer class="hidden-xs-only"></v-spacer>
-        <v-spacer class="hidden-xs-only"></v-spacer>
-        <v-col class="mx-10 d-md-non text-center">
-           <v-col class="mx-10">
-          <h2 class="white--text my-5">Company</h2>
-          <p class="white--text my-5">About</p>
-          <p class="white--text my-5">Our Partner</p>
-        </v-col>
-        </v-col>
-        <v-spacer class="d-md-none .d-lg-flex"></v-spacer>
-        <v-col class="mx-10 d-md-non text-center">
-           <v-col class="mx-10">
-          <h2 class="white--text my-5">Company</h2>
-          <p class="white--text my-5">About</p>
-          <p class="white--text my-5">Our Partner</p>
-        </v-col>
-        </v-col>
-        <v-spacer class="d-md-none .d-lg-flex"></v-spacer>
-        <v-col class="hidden-xs-only">
-          <h2 class="white--text my-4">Social Media</h2>
-          <v-col class="d-flex align-center" style="height: 3rem">
-            <img src="../static/facebook.png" />
-            <p class="white--text my-3 mx-2">Company</p>
-          </v-col>
-          <v-col class="d-flex align-center" style="height: 3rem">
-            <img src="../static/ig.png" />
-            <p class="white--text my-4 mx-2">About</p>
-          </v-col>
-          <v-col class="d-flex align-center" style="height: 3rem">
-            <img src="../static/youtube.png" />
-            <p class="white--text my-4 mx-2">Our Partner</p>
-          </v-col>
-        </v-col>
-      </v-footer>
-      <div class="line"></div>
     <v-row class="bg">
-      <v-col class="white--text d-flex align-self-center justify-center"
-        >&copy;Copyright 2021. All Rights Reserved.
+      <v-col class="mx-15">
+        <v-col class="d-flex align-center">
+          <img src="../static/Weserve Token-06.png" />
+          <h2 class="white--text mx-5">WE SERVE</h2>
+        </v-col>
+        <v-col>
+          <p class="white--text">
+            32/199 Phoonphol rd., Taladnueh, Muang, Phuket 83000
+          </p>
+        </v-col>
+      </v-col>
+      <v-spacer class="hidden-xs-only"></v-spacer>
+      <v-spacer class="hidden-xs-only"></v-spacer>
+      <v-col class="mx-10 d-md-non text-center">
+        <v-col class="mx-10">
+          <h2 class="white--text my-5">Company</h2>
+          <p class="white--text my-5">About</p>
+          <p class="white--text my-5">Our Partner</p>
+        </v-col>
+      </v-col>
+      <v-spacer class="d-md-none .d-lg-flex"></v-spacer>
+      <v-col class="mx-10 d-md-non text-center">
+        <v-col class="mx-10">
+          <h2 class="white--text my-5">Company</h2>
+          <p class="white--text my-5">About</p>
+          <p class="white--text my-5">Our Partner</p>
+        </v-col>
+      </v-col>
+      <v-spacer class="d-md-none .d-lg-flex"></v-spacer>
+      <v-col class="hidden-xs-only">
+        <h2 class="white--text my-4">Social Media</h2>
+        <v-col class="d-flex align-center" style="height: 3rem">
+          <img src="../static/facebook.png" />
+          <p class="white--text my-3 mx-2">Company</p>
+        </v-col>
+        <v-col class="d-flex align-center" style="height: 3rem">
+          <img src="../static/ig.png" />
+          <p class="white--text my-4 mx-2">About</p>
+        </v-col>
+        <v-col class="d-flex align-center" style="height: 3rem">
+          <img src="../static/youtube.png" />
+          <p class="white--text my-4 mx-2">Our Partner</p>
+        </v-col>
       </v-col>
     </v-row>
-    <v-col class="d-flex bg">
-      <v-col class="d-md-none .d-lg-flex justify-center d-flex align-center">
+    <div class="white" style="height: 1px"></div>
+    <v-col class="white--text d-flex align-self-center justify-center darkbg" style="height:1vw"
+      >&copy;Copyright 2021. All Rights Reserved.
+    </v-col>
+    <v-col class="d-flex bg align-center">
+      <v-col class="d-md-none .d-lg-flex justify-center d-flex align-center" >
         <img src="../static/facebook.png" class="mx-5" />
         <img src="../static/ig.png" class="mx-5" />
-        
+
         <img src="../static/youtube.png" class="mx-5" />
       </v-col>
     </v-col>

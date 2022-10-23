@@ -38,7 +38,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: calc(1vh + 10px)
+    font-size: calc(1vh + 10px);
+    color: aliceblue;
   }
   html {
     scroll-behavior: smooth;
@@ -66,7 +67,7 @@
     margin-left: 3rem;
     text-align: center;
     font: normal normal 300 25px/38px Poppins;
-    font-size: 1.8vw;
+    font-size: 1.3vw;
     letter-spacing: 0.63px;
     color: #ffffff;
     opacity: 1;
@@ -86,12 +87,15 @@
     box-shadow: 0px 6px 6px #0000001c;
     opacity: 1;
   }
-  
+  a{
+    color: #ffffff;
+  }
   .logo {
     display: flex;
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: 3rem;
+  
   }
   
   .menu {
@@ -151,8 +155,9 @@
       height: 75px;
       width: 100%;
     }
-  
+    
     .text {
       display: none;
     }
+
   }

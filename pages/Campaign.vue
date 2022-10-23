@@ -17,11 +17,10 @@
               <v-card @click="getPage(index)">
                 <div class="v-img"
                   object-fit="cover"
-                  height="15vw"
-                  width="100%"
+                  height="10vw"
+                  width="5vw"
                   opaciti="1"
-                  
-                >
+                   >
                   <img :src="require(`@/static/${i.url}`)" alt="img" class="responsive"/>
                 </div>
                 <v-card-text class="d-flex justify-space-between mb-15">
@@ -95,8 +94,8 @@ export default {
   background-color: #f4f4f4;
 }
 @media (max-width: 800px) {
-  .v-img{
+  /* .v-img{
     height: 50vw;
-  }
+  } */
 }
 </style>

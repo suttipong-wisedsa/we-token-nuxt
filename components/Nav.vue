@@ -3,22 +3,37 @@
     <div class="Navbar">
       <div class="logo">
         <img src="../static/photologo.png" alt="logo" />
-        <h2 class="d-flex justify-center align-center mx-3" style="font-size: calc(1vh + 10px);" >WE TOKEN</h2>
+        <h2 class="d-flex justify-center align-center">WE TOKEN</h2>
       </div>
       <div class="menu">
         <ul class="list">
           <li v-for="(item, index) in menu" :key="index">
-            <a :href="item.path" class="text">{{ item.li }}</a>
+            <a
+              :href="item.path"
+              class="text"
+              style="color: aliceblue; font-family: "
+              >{{ item.li }}</a
+            >
           </li>
           <!--TH toggle-->
-          <div class="text1" @click="OnclickTab" style="display:flex; justify-content: center; align-items: center;">
+          <div
+            class="text1"
+            @click="OnclickTab"
+            style="display: flex; justify-content: center; align-items: center"
+          >
             <div class="mx-2 d-flex justify-center align-center">
               <div class="ml-1 mr-1">
-              <img class="hide" src="../static/youtube.png" @click="OnclickTab" />
-            </div>     
-            <div>
-              <a class="hide" style="font-size: 25px; color:aliceblue">English</a>
-            </div>
+                <img
+                  class="hide"
+                  src="../static/youtube.png"
+                  @click="OnclickTab"
+                />
+              </div>
+              <div>
+                <a class="hide" style="font-size: 1.3vw; color: aliceblue"
+                  >English</a
+                >
+              </div>
             </div>
           </div>
         </ul>
@@ -36,7 +51,7 @@
     <!--Toggle TH-->
     <div v-if="checkTab" >
       <v-card-text class="list-menu-th">
-        <div class="eng">
+        <div class="eng ">
           <a href="#">English</a>
         </div>
         <div class="eng">
@@ -67,17 +82,15 @@
           class="box-lg"
           style="display: flex; justify-content: center; margin-top: 1.5rem"
         >
-          <div class="eng">
+          <div class="d-flex">
             <h2 class="white--text">English</h2>
-          </div>
-          <div class="th">
+            <h2 class="white--text mx-5">|</h2>
             <h2 class="white--text">ภาษาไทย</h2>
           </div>
         </div>
       </ul>
     </div>
   </nav>
-  
 </template>
 
 <script>
@@ -113,5 +126,5 @@ export default {
 </script>
 
 <style scoped>
-@import '../assets/Nav.css';
+@import "../assets/Nav.css";
 </style>
