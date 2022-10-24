@@ -10,7 +10,7 @@
       </div>
     </div>
     <Card />
-    <!-- <Trading/> -->
+    <Trading/>
     <Partners />
     <News />
     <Cardfooter />

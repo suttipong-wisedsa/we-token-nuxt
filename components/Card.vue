@@ -3,7 +3,7 @@
     <div class="main">
       <v-container>
         <v-col class="d-flex justify-center" style="height: 15vw">
-          <p class="homecard--text" style="font-size: 2vw; text-indent: 50px">
+          <p class="homecard--text" style="font-size: 2vw; text-indent: 50px; color:#767484">
             WE Token, a decentralized digital asset lending business developed
             by WESERVE PLATFORM Co.,Ltd. is a platform that incorporates
             centralized finance with decentralized finance (CeDeFi).

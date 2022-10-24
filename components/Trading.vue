@@ -23,12 +23,16 @@ export default {
     },
   },
   methods: {
+    
     canUseDOM() {
       return (
         typeof window !== "undefined" &&
         window.document &&
         window.document.createElement
       );
+    },
+    resize(width, height){
+      this.chart.resize(width, height);
     },
     getScriptElement() {
       return document.getElementById(SCRIPT_ID);

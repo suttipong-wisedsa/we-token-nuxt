@@ -1,8 +1,11 @@
 <template>
   <v-app>
-    <div class="back">
+    <div class="back hidden-sm-and-down">
       <div class="center">
-        <div class="container"></div>
+      </div>
+    </div>
+    <div class="back1 hidden-md-and-up">
+      <div class="center">
       </div>
     </div>
     <!-- <Vue-trading-view/> -->
@@ -18,10 +21,17 @@
 }
 
 .back {
-  background-image: url("../static/landing3.png");
+  background-image: url("../static/WE.png");
   width: 100%;
   background-size: 100% 100%;
   height: 70rem;
+  position: relative;
+}
+.back1 {
+  background-image: url("../static/WE.png");
+  width: 100%;
+  background-size: 100% 100%;
+  height: 15rem;
   position: relative;
 }
 
