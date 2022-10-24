@@ -4,7 +4,7 @@
       <v-col class="mx-15">
         <v-col class="d-flex align-center">
           <img src="../static/Weserve Token-06.png" />
-          <h2 class="white--text mx-5">WE SERVE</h2>
+          <h2 class="white--text mx-3">WE SERVE</h2>
         </v-col>
         <v-col>
           <p class="white--text">
@@ -47,14 +47,13 @@
       </v-col>
     </v-row>
     <div class="white" style="height: 1px"></div>
-    <v-col class="white--text d-flex align-self-center justify-center darkbg" style="height:1vw"
-      >&copy;Copyright 2021. All Rights Reserved.
-    </v-col>
-    <v-col class="d-flex bg align-center">
-      <v-col class="d-md-none .d-lg-flex justify-center d-flex align-center" >
+    <v-col style="background-color: #222222">
+      <v-col class="white--text d-flex align-self-center justify-center"
+        >&copy;Copyright 2021. All Rights Reserved.
+      </v-col>
+      <v-col class="d-md-none .d-lg-flex justify-center d-flex align-center">
         <img src="../static/facebook.png" class="mx-5" />
         <img src="../static/ig.png" class="mx-5" />
-
         <img src="../static/youtube.png" class="mx-5" />
       </v-col>
     </v-col>
