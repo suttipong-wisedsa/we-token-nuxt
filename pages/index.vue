@@ -22,5 +22,9 @@ export default {
 </script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Sarabun');
+/* html{
+  margin: 0;
+  padding: 0;
+} */
 </style>

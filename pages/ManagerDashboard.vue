@@ -25,7 +25,7 @@
             >
           </v-col>
         </v-row>
-        <v-card class="my-10">
+        <v-card class="my-10" style="box-shadow: 0px 5px 20px #00000029;">
           <v-container>
             <v-col>
               <h1 style="font-size: calc(1vh + 10px)">WE TOKEN x WESERVE</h1>
@@ -41,19 +41,22 @@
           </v-container>
           <v-row>
             <v-col>
-              <v-card-text> 01 Oct, 2022 </v-card-text>
+              <v-card-text class="d-flex">
+                <img src="../static/calender.png"/>
+                <h3 style="color:#A0A0A0" class="mx-1">01 Oct, 2022</h3>
+              </v-card-text>
               <v-card-text>
-                <p style="font-size: calc(1vh + 10px); text-indent: 50px;">
+                <p style="font-size: calc(1vh + 10px); text-indent: 50px; font-family: 'Sarabun';">
                   {{ data }}
                 </p>
               </v-card-text>
               <v-card-text>
-                <p style="font-size: calc(1vh + 10px); text-indent: 50px;">
+                <p style="font-size: calc(1vh + 10px); text-indent: 50px; font-family: 'Sarabun';">
                   {{ data }}
                 </p>
               </v-card-text>
               <v-card-text>
-                <p style="font-size: calc(1vh + 10px); text-indent: 50px;">
+                <p style="font-size: calc(1vh + 10px); text-indent: 50px; font-family: 'Sarabun';">
                   {{ data }}
                 </p>
               </v-card-text>
@@ -62,7 +65,7 @@
         </v-card>
         <v-row class="mt-15 mb-10">
           <h1 style="font-size: calc(2.5vh + 10px)">
-            <a class="textcontent--text">Other</a><a class="textyellow--text">WE TOKEN</a><a class="textcontent--text">CAMPAIGN</a>
+            <a class="textcontent--text">Other</a><a class="textyellow--text mx-2">WE TOKEN</a><a class="textcontent--text">CAMPAIGN</a>
           </h1></v-row
         >
         <v-row>

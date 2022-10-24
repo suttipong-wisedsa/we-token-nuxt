@@ -46,23 +46,23 @@
         </v-col>
       </v-col>
     </v-row>
-    <div class="white" style="height: 1px"></div>
-    <v-col style="background-color: #222222">
-      <v-col class="white--text d-flex align-self-center justify-center"
+     <div class="line"></div>
+    <v-row style="background-color: #222222">
+      <v-card-text class="white--text d-flex align-self-center justify-center"
         >&copy;Copyright 2021. All Rights Reserved.
-      </v-col>
+      </v-card-text>
       <v-col class="d-md-none .d-lg-flex justify-center d-flex align-center">
         <img src="../static/facebook.png" class="mx-5" />
         <img src="../static/ig.png" class="mx-5" />
         <img src="../static/youtube.png" class="mx-5" />
       </v-col>
-    </v-col>
+    </v-row>
   </div>
 </template>
 <style scoped>
 .line {
   background-color: aliceblue;
-  height: 1px;
+  height: 8px;
 }
 .bg {
   background-color: #222222;

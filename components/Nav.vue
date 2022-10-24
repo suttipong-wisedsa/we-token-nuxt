@@ -2,7 +2,7 @@
   <nav class="bg">
     <div class="Navbar">
       <div class="logo">
-        <img src="../static/photologo.png" alt="logo" />
+        <img src="../static/photologo.png" alt="logo" class="mx-2"/>
         <h2 class="d-flex justify-center align-center">WE TOKEN</h2>
       </div>
       <div class="menu">
@@ -52,10 +52,10 @@
     <div v-if="checkTab" >
       <v-card-text class="list-menu-th">
         <div class="eng ">
-          <a href="#">English</a>
+          <a href="#" class="grey--text">English</a>
         </div>
         <div class="eng">
-          <a href="#">ภาษาไทย</a>
+          <a href="#" class="grey--text">ภาษาไทย</a>
         </div> 
       </v-card-text>
     </div>
@@ -63,19 +63,19 @@
     <div v-if="check" class="menu">
       <ul class="list-menu">
         <div style="margin-top: 0.5rem">
-          <a href="#" class="textmenu--text">Token info</a>
+          <a href="#" class="textmenu--text" style="color:#FFFFFF">Token info</a>
         </div>
         <div class="line"></div>
         <div style="margin-top: 1.5rem">
-          <a href="#" class="textmenu--text">News</a>
+          <a href="#" class="textmenu--text" style="color:#FFFFFF">News</a>
         </div>
         <div class="line"></div>
         <div style="margin-top: 1.5rem">
-          <a href="#" class="textmenu--text">Contact</a>
+          <a href="#" class="textmenu--text" style="color:#FFFFFF">Contact</a>
         </div>
         <div class="line"></div>
         <div style="margin-top: 1.5rem">
-          <a href="/Campaign" class="textmenu--text">Campaign</a>
+          <a href="/Campaign" class="textmenu--text" style="color:#FFFFFF">Campaign</a>
         </div>
         <div class="line"></div>
         <div

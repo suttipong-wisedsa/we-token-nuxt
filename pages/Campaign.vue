@@ -1,7 +1,8 @@
 <template>
   <v-app class="bg-1">
-    <div>
-      <Nav />
+    <Nav />
+    <div class="my-15">
+    
       <v-row class="d-flex align-center justify-center" flat height="200" tile>   
           <v-text class="my-15">
             <h1 class="text-1">WE TOKEN</h1>
@@ -9,33 +10,26 @@
             <h1 class="text-2">CAMPAIGN</h1>
       </v-row>
       <!--Header-->
-      <v-container>
+      <v-container >
         <v-row justify="center">
           <v-col v-for="(i, index) in imgs" :key="index" cols="auto">
             <!--card-->
             <div class="hover">
               <v-card @click="getPage(index)">
-                <div class="v-img"
-                  object-fit="cover"
-                  height="10vw"
-                  width="5vw"
-                  opaciti="1"
-                   >
-                  <img :src="require(`@/static/${i.url}`)" alt="img" class="responsive"/>
-                </div>
-                <v-card-text class="d-flex justify-space-between mb-15">
-                  <v-card-text class="d-flex">
+                <img :src="require(`@/static/${i.url}`)" alt="img" class="responsive"/>
+                <v-card-text class="d-flex">
                     <img  src="../static/Weserve Logo-01.png"/>
-                    <h1 style="font-size:1vw">{{ i.title }}</h1>
+                    <h1 style="font-size:1vw" class="mx-1">{{ i.title }}</h1>
                   </v-card-text>
-                </v-card-text>
               </v-card>
             </div>
           </v-col>
         </v-row>
       </v-container>
     </div>
-    <Footer />
+    <v-col class="mt-10">
+      <Footer/>
+    </v-col>
   </v-app>
 </template>
 <script>
@@ -73,6 +67,7 @@ export default {
 <style scoped>
 .responsive {
   width: 100%;
+  max-width: 350px;
   height: auto;
 }
 .hover:hover {
