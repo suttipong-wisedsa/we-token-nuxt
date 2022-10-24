@@ -1,82 +1,81 @@
 <template>
-  <v-app>
-    <div class="back hidden-sm-and-down">
-      <div class="center">
-      </div>
+  <div>
+    <div class="background center">
+      <v-row class="hidden-sm-and-down">
+        <v-col>     
+            <img src="../static/bass1.png" class="md1" /> 
+            <img src="../static/bass2.png" class="md" />
+        </v-col>
+        <v-col class="text-center mt-15">
+          <img src="../static/bass3.png" style="height:15vw" class="mt"/>
+          <h1 class="text--text" style="font-size:2.5vw">WESERVE TOKEN (WE)</h1>
+          <h2 class="texttitle--text" style="font-size:1.5vw">Got question? Contact us by scanning the QR code.</h2>
+        </v-col>
+      </v-row>
+      <v-row class="hidden-md-and-up">
+        <v-col>     
+            <img src="../static/bass1.png" class="md11" /> 
+            <img src="../static/bass2.png" class="mdd" />
+        </v-col>
+        <v-col class="text-center mt-15">
+          <img src="../static/bass3.png" style="height:50vw" class="mt1"/>
+          <h1 class="text--text my-5" style="font-size:5vw">WESERVE TOKEN (WE)</h1>
+          <h2 class="texttitle--text my-3" style="font-size:3vw">Got question? Contact us by scanning the QR code.</h2>
+        </v-col>
+      </v-row>
     </div>
-    <div class="back1 hidden-md-and-up">
-      <div class="center">
-      </div>
-    </div>
-    <!-- <Vue-trading-view/> -->
     <Footer />
-  </v-app>
+  </div>
 </template>
 
 <style scoped>
-.foot-photo {
-  width: 100%;
-  height: 7rem;
-  object-fit: fill;
-}
-
-.back {
-  background-image: url("../static/page.png");
+.background {
+  background-image: url("../static/bass4.png");
   width: 100%;
   background-size: 100% 100%;
-  height: 70rem;
+  height: 100vh;
   position: relative;
+  border-color: blue;
+  border-width: 20px;
 }
-
-.back1 {
-  background-image: url("../static/WE.png");
-  width: 100%;
-  background-size: 100% 100%;
-  height: 15rem;
-  position: relative;
-}
-
 .center {
+  display: flex;
+}
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.md {
   position: absolute;
-  top: 18.75rem;
-  left: 10rem;
+  margin-left: -8vw;
+  margin-top: 5vh;
+  width: 12vw;
+  margin-top: 18vw;
 }
-
-h1 {
-  font: normal normal bold 4.375rem/106px Poppins;
-  letter-spacing: 3.5px;
-  color: #6b420b;
-  opacity: 1;
+.md1 {
+  position: relative;
+  width: 35vw;
+  margin-left: 13vw;
+  margin-top: 13vw;
 }
-
-.head-photo {
+.mdd{
   position: absolute;
-  bottom: -0.5vh;
-  left: -1vw;
+  margin-left: -8vw;
+  margin-top: 5vh;
+  width: 20vw;
+  margin-top: 18vw;
 }
-
-@media screen and (max-width: 820px) {
-  .back {
-    background-image: url("../static/landing3.png");
-    width: 100%;
-    height: 25rem;
-    position: relative;
-  }
-
-  .center {
-    position: absolute;
-    top: 2rem;
-    left: 1.188rem;
-  }
-
-  h1 {
-    color: #6b420b;
-    font-size: 1.563rem;
-  }
-
-  .contsiner {
-    color: #6b420b;
-    font-size: 1.563rem;
-  }
+.md11 {
+  position: relative;
+  width: 75vw;
+  margin-left: 8vw;
+  margin-top: 13vw;
+}
+.mt{
+  margin-top: 20vh;
+}
+.mt1{
+ 
 }
 </style>

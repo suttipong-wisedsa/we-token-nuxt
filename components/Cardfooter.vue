@@ -21,14 +21,13 @@
           </v-card>
           <v-row>
             <v-col class="my-5 px-5">
-              <h1>{{ item.title }}</h1>
-              <p>{{ item.detail }}</p>
+              <h1 class="texttitle--text">{{ item.title }}</h1>
+              <p class="title--text">{{ item.detail }}</p>
             </v-col>
           </v-row>
         </v-col>
       </v-row>
     </v-container>
-
   </div>
 </template>
 
@@ -50,7 +49,7 @@ export default {
           detail: "Cryptocurrency stored on our servers is covered by our insurance policy.",
         },
         {
-          photo: "card1.png",
+          photo: "card3.png",
           title: "Industry best practices",
           detail: "WE Token supports a variety of the most popular digital currencies.",
         },
@@ -63,6 +62,6 @@ export default {
 </script>
 <style>
 .main-bg {
-  background-color: #E8E8EA
+  background-color:#f4f4f4
 }
 </style>

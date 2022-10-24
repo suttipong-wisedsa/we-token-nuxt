@@ -61,7 +61,9 @@
     top: -100%;
     transition: 3s;
   }
-  
+  .hide{
+    margin-top: 1vh;
+  }
   .text {
     text-decoration: none;
     margin-left: 3rem;

@@ -49,8 +49,8 @@
         </v-card>
         <v-row class="mt-15 mb-10">
           <h1 style="font-size: calc(2.5vh + 10px)">
-            <a class="textcontent--text">Other</a><a class="textyellow--text mx-2">WE TOKEN</a><a
-              class="textcontent--text">CAMPAIGN</a>
+            <a class="title--text">Other</a><a class="cardfooter--text mx-2">WE TOKEN</a><a
+              class="title--text">CAMPAIGN</a>
           </h1>
         </v-row>
         <v-row>

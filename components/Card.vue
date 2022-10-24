@@ -3,15 +3,20 @@
     <div class="main">
       <v-container>
         <v-col class="d-flex justify-center" style="height: 15vw">
-          <p class="homecard--text" style="font-size: 2vw; text-indent: 50px; color:#767484">
+          <p class="homecard--text hidden-sm-and-down" style="font-size: 2vw; text-indent: 50px; color:#767484">
+            WE Token, a decentralized digital asset lending business developed
+            by WESERVE PLATFORM Co.,Ltd. is a platform that incorporates
+            centralized finance with decentralized finance (CeDeFi).
+          </p>
+          <p class="homecard--text hidden-md-and-up " style="font-size: 3vw; text-indent: 50px; color:#767484;">
             WE Token, a decentralized digital asset lending business developed
             by WESERVE PLATFORM Co.,Ltd. is a platform that incorporates
             centralized finance with decentralized finance (CeDeFi).
           </p>
         </v-col>
-      </v-container>
+      </v-container> 
       <v-container>
-        <v-row justify="center">
+        <v-row justify="center my-10">
           <v-col v-for="(item, index) in card" :key="index" cols="auto">
             <!--card pc-->
             <v-card
@@ -30,22 +35,22 @@
             <!--card mobile-->
             <v-card
               class="model mx-10 hidden-md-and-up"
-              height="13rem"
-              width="15rem"
+              height="12rem"
+              width="14rem"
             >
               <v-text class="d-flex justify-end">
                 <img class="my-3 mx-2" src="../static/Weserve Token-06.png" />
               </v-text>
               <v-row justify="center">
-                <h1 class="">{{ item.title }}</h1>
-                <p style="color: #fdd000; font-size: 3.5vw">
-                  {{ item.detail }}
-                </p>
+                <h1>{{ item.title }}</h1>
               </v-row>
+              <v-col>
+                <p style="color: #fdd000" class="text-center">{{ item.detail }}</p>
+              </v-col>
             </v-card>
           </v-col>
+          <Trading />
         </v-row>
-        <!-- <Trading /> -->
       </v-container>
     </div>
   </v-app>

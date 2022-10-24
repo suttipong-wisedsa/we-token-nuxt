@@ -17,7 +17,7 @@
                 <img class="hide" src="../static/united-states-of-america.png" @click="OnclickTab" />
               </div>
               <div>
-                <a class="hide" style="font-size: 1.3vw; color: aliceblue">English</a>
+                <a class="hide" style="font-size: 1.2vw; color: aliceblue">English</a>
               </div>
             </div>
           </div>

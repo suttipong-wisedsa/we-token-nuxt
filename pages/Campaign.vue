@@ -1,7 +1,7 @@
 <template>
   <v-app class="bg-1">
     <Nav />
-    <div >
+    <div class="mb-10">
       <v-row class="d-flex justify-center align-center" style="height:10vw">
         <div class="d-flex">
           <h1 class="text-1">WE TOKEN</h1>
