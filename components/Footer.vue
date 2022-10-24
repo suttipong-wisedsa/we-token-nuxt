@@ -46,10 +46,10 @@
         </v-col>
       </v-col>
     </v-row>
-     <div class="line"></div>
+    <div class="line"></div>
     <v-row style="background-color: #222222">
-      <v-card-text class="white--text d-flex align-self-center justify-center"
-        >&copy;Copyright 2021. All Rights Reserved.
+      <v-card-text class="white--text d-flex align-self-center justify-center">&copy;Copyright 2021. All Rights
+        Reserved.
       </v-card-text>
       <v-col class="d-md-none .d-lg-flex justify-center d-flex align-center">
         <img src="../static/facebook.png" class="mx-5" />
@@ -64,6 +64,7 @@
   background-color: aliceblue;
   height: 8px;
 }
+
 .bg {
   background-color: #222222;
 }

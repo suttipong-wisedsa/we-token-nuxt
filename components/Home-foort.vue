@@ -9,7 +9,7 @@
       </div>
     </div>
     <!-- <Vue-trading-view/> -->
-    <Footer/>
+    <Footer />
   </v-app>
 </template>
 
@@ -21,12 +21,13 @@
 }
 
 .back {
-  background-image: url("../static/WE.png");
+  background-image: url("../static/page.png");
   width: 100%;
   background-size: 100% 100%;
   height: 70rem;
   position: relative;
 }
+
 .back1 {
   background-image: url("../static/WE.png");
   width: 100%;

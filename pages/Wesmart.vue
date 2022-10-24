@@ -5,27 +5,13 @@
       <v-container>
         <v-row class="my-10">
           <v-col class="d-flex align-center">
-            <a
-              href="./Campaign"
-              style="text-decoration: none; font-size: calc(1.5vh + 7px)"
-              class="textcontent--text"
-              >WE TOKEN CAMPAIGN</a
-            >
+            <a href="./Campaign" style="text-decoration: none; font-size: calc(1.5vh + 7px)" class="title--text">WE
+              TOKEN CAMPAIGN</a>
             <h1 style="font-size: 2rem" class="text-center mx-3 textcontent--text">></h1>
-            <img
-              src="../static/Weserve Token-06.png"
-              style="height: 33px; width: 34px"
-            />
-            <a style="font-size: calc(1vh + 7px); color: #fdd000" class="mx-2"
-              >WE TOKEN X</a
-            >
-            <img
-              src="../static/Weserve Logo-01.png"
-              style="height: 33px; width: 34px"
-            />
-            <a style="font-size: calc(1vh + 7px); color: #fdd000" class="mx-2"
-              >WE SMART EXPRRESS</a
-            >
+            <img src="../static/Weserve Token-06.png" style="height: 33px; width: 34px" />
+            <a style="font-size: calc(1vh + 7px); color: #fdd000" class="mx-2">WE TOKEN X</a>
+            <img src="../static/Weserve Logo-01.png" style="height: 33px; width: 34px" />
+            <a style="font-size: calc(1vh + 7px); color: #fdd000" class="mx-2">WE SMART EXPRRESS</a>
           </v-col>
         </v-row>
         <v-card class="my-10" style="box-shadow: 0px 5px 20px #00000029;">
@@ -34,18 +20,13 @@
               <h1 style="font-size: calc(2vh + 10px)">WE TOKEN x WE SMART EXPRESS</h1>
             </v-col>
             <v-img class="mx-8">
-              <img
-                src="../static/bigbg.png"
-                class="responsive"
-                width="600"
-                height="400"
-              />
+              <img src="../static/bigbg.png" class="responsive" width="600" height="400" />
             </v-img>
           </v-container>
           <v-row>
             <v-col>
               <v-card-text class="d-flex">
-                <img src="../static/calender.png"/>
+                <img src="../static/calender.png" />
                 <h3 style="color:#A0A0A0" class="mx-1">01 Oct, 2022</h3>
               </v-card-text>
               <v-card-text>
@@ -68,19 +49,16 @@
         </v-card>
         <v-row class="mt-15 mb-10">
           <h1 style="font-size: calc(2.5vh + 10px)">
-            <a class="textcontent--text">Other</a><a class="textyellow--text mx-2">WE TOKEN</a><a class="textcontent--text">CAMPAIGN</a>
-          </h1></v-row
-        >
+            <a class="textcontent--text">Other</a><a class="textyellow--text mx-2">WE TOKEN</a><a
+              class="textcontent--text">CAMPAIGN</a>
+          </h1>
+        </v-row>
         <v-row>
           <v-col v-for="(i, index) in imgs" :key="index" cols="auto">
             <div class="hover">
               <v-card @click="getPage(index)">
                 <v-img object-fit="cover" opaciti="1" class="responsive">
-                  <img
-                    :src="require(`@/static/${i.url}`)"
-                    style="height: 200; width: 250"
-                    class="responsive"
-                  />
+                  <img :src="require(`@/static/${i.url}`)" style="height: 200; width: 250" class="responsive" />
                 </v-img>
                 <v-card-text class="d-flex justify-space-between mb-15">
                   <v-card-text class="d-flex">
@@ -101,15 +79,19 @@
 .bg-img {
   background-image: url("../static/bigbg.png");
 }
+
 .bg {
   background-color: rgb(106, 153, 194);
 }
+
 .text:hover {
   color: #fdd000;
 }
+
 .text {
   color: #767484;
 }
+
 .responsive {
   width: 100%;
   height: auto;

@@ -46,7 +46,7 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    '@nuxtjs/apollo',
+    // '@nuxtjs/apollo',
   ],
   apollo: {
     clients: {
@@ -85,7 +85,9 @@ export default {
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
-          li:'#F4F4F4'
+          li:'#F4F4F4',
+          cardfooter:"#FDD000",
+          title:"#767484"
         }
       }
     }
