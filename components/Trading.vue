@@ -96,14 +96,15 @@ export default {
 }
 </style> -->
 <template>
-  <div class="trading">
-    <VueTradingView :options="{
-      symbol: 'NASDAQ:AAPL',
-      theme: 'dark',
-      autosize: true, //props trading responsive
-      width:350,
-      height:220,
-    }" />
+  <div>
+    <div class="hideaaa">
+      <VueTradingView :options="{
+        symbol: 'NASDAQ:AAPL',
+        theme: 'dark',
+        autosize: true, //props trading responsive
+        height: 500,
+      }" />
+    </div>
   </div>
 </template>
 
@@ -112,14 +113,28 @@ import VueTradingView from 'vue-trading-view';
 export default {
   components: {
     VueTradingView,
-  }
+  },
+  data() {
+    return {
+      h: "true"
+    }
+  },
+  // methods: {
+  //  getIf(){
+  //   this.h = "fgfg"
+  //  }
+  // },
 }
 
 
 </script>
 
 <style scoped>
-.trading{
-
+/* @media screen and (max-width: 820px) {
+.hideaaa{
+  display: none;
 }
+
+} */
+
 </style>
