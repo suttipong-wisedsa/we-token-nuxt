@@ -62,6 +62,6 @@ export default {
 </script>
 <style>
 .main-bg {
-  background-color:#f4f4f4
+  background-color: #f4f4f4
 }
 </style>

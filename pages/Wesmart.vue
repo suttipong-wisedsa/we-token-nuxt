@@ -21,6 +21,7 @@
             </v-col>
             <v-img class="mx-8">
               <img src="../static/bigbg.png" class="responsive" width="600" height="400" />
+              <!-- <img src="../static/photo1.png" class="responsive" width="600" height="400" /> -->
             </v-img>
           </v-container>
           <v-row>

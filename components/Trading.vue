@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <v-row>
     <v-col>
       <div :id="container_id"></div>
@@ -23,7 +23,7 @@ export default {
     },
   },
   methods: {
-    
+
     canUseDOM() {
       return (
         typeof window !== "undefined" &&
@@ -31,7 +31,7 @@ export default {
         window.document.createElement
       );
     },
-    resize(width, height){
+    resize(width, height) {
       this.chart.resize(width, height);
     },
     getScriptElement() {
@@ -86,3 +86,40 @@ export default {
   },
 };
 </script>
+
+
+<style>
+@media only screen and (max-width: 800px) {
+  #container_id {
+    height: 30vh !important;
+  }
+}
+</style> -->
+<template>
+  <div class="trading">
+    <VueTradingView :options="{
+      symbol: 'NASDAQ:AAPL',
+      theme: 'dark',
+      autosize: true, //props trading responsive
+      width:350,
+      height:220,
+    }" />
+  </div>
+</template>
+
+<script>
+import VueTradingView from 'vue-trading-view';
+export default {
+  components: {
+    VueTradingView,
+  }
+}
+
+
+</script>
+
+<style scoped>
+.trading{
+
+}
+</style>

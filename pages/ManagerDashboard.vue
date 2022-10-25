@@ -20,6 +20,7 @@
               <h1 style="font-size: calc(1vh + 10px)">WE TOKEN x WESERVE</h1>
             </v-col>
             <v-img class="mx-8">
+              <!-- <img src="../static/photo3.png" class="responsive" width="600" height="400" /> -->
               <img src="../static/bigbg.png" class="responsive" width="600" height="400" />
             </v-img>
           </v-container>
