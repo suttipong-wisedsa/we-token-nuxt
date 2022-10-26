@@ -1,71 +1,73 @@
 <template>
   <div>
-    <v-row class="bg">
-      <v-col class="mx-15">
-        <v-col class="d-flex align-center">
-          <img src="../static/Weserve Token-06.png" />
-          <h2 class="white--text mx-3">WE SERVE</h2>
+    <div class="darkbg">
+      <v-footer>
+        <v-row class="darkbg">
+          <v-col class="mx-15">
+            <v-col class="d-flex align-center">
+              <img src="../static/Weserve Token-06.png" />
+              <h2 class="white--text mx-3">WE SERVE</h2>
+            </v-col>
+            <v-col>
+              <p class="white--text">
+                32/199 Phoonphol rd., Taladnueh, Muang, Phuket 83000
+              </p>
+            </v-col>
+          </v-col>
+          <v-spacer class="hidden-sm-and-down"></v-spacer>
+          <v-spacer class="hidden-sm-and-down"></v-spacer>
+          <v-col class="mx-10 d-md-non text-center">
+            <v-col class="mx-10">
+              <h2 class="white--text my-5">Company</h2>
+              <p class="white--text my-5">About</p>
+              <p class="white--text my-5">Our Partner</p>
+            </v-col>
+          </v-col>
+          <v-spacer class="d-md-none .d-lg-flex"></v-spacer>
+          <v-col class="mx-10 d-md-non text-center">
+            <v-col class="mx-10">
+              <h2 class="white--text my-5">Company</h2>
+              <p class="white--text my-5">About</p>
+              <p class="white--text my-5">Our Partner</p>
+            </v-col>
+          </v-col>
+          <v-spacer class="d-md-none .d-lg-flex"></v-spacer>
+          <v-col class="hidden-sm-and-down">
+            <h2 class="white--text my-4">Social Media</h2>
+            <v-col class="d-flex align-center" style="height: 3rem">
+              <img src="../static/facebook.png" />
+              <p class="white--text my-3 mx-2">Company</p>
+            </v-col>
+            <v-col class="d-flex align-center" style="height: 3rem">
+              <img src="../static/ig.png" />
+              <p class="white--text my-4 mx-2">About</p>
+            </v-col>
+            <v-col class="d-flex align-center" style="height: 3rem">
+              <img src="../static/youtube.png" />
+              <p class="white--text my-4 mx-2">Our Partner</p>
+            </v-col>
+          </v-col>
+        </v-row>
+      </v-footer>
+    </div>
+    <v-footer>
+      <v-row style="background-color: #222222; border-top: 1px solid #ffffff;">
+        <v-card-text class="white--text d-flex align-self-center justify-center"
+          >&copy;Copyright 2021. All Rights Reserved.
+        </v-card-text>
+        <v-col class="d-md-none .d-lg-flex justify-center d-flex align-center">
+          <img src="../static/facebook.png" class="mx-5" />
+          <img src="../static/ig.png" class="mx-5" />
+          <img src="../static/youtube.png" class="mx-5" />
         </v-col>
-        <v-col>
-          <p class="white--text">
-            32/199 Phoonphol rd., Taladnueh, Muang, Phuket 83000
-          </p>
-        </v-col>
-      </v-col>
-      <v-spacer class="hidden-xs-only"></v-spacer>
-      <v-spacer class="hidden-xs-only"></v-spacer>
-      <v-col class="mx-10 d-md-non text-center">
-        <v-col class="mx-10">
-          <h2 class="white--text my-5">Company</h2>
-          <p class="white--text my-5">About</p>
-          <p class="white--text my-5">Our Partner</p>
-        </v-col>
-      </v-col>
-      <v-spacer class="d-md-none .d-lg-flex"></v-spacer>
-      <v-col class="mx-10 d-md-non text-center">
-        <v-col class="mx-10">
-          <h2 class="white--text my-5">Company</h2>
-          <p class="white--text my-5">About</p>
-          <p class="white--text my-5">Our Partner</p>
-        </v-col>
-      </v-col>
-      <v-spacer class="d-md-none .d-lg-flex"></v-spacer>
-      <v-col class="hidden-xs-only">
-        <h2 class="white--text my-4">Social Media</h2>
-        <v-col class="d-flex align-center" style="height: 3rem">
-          <img src="../static/facebook.png" />
-          <p class="white--text my-3 mx-2">Company</p>
-        </v-col>
-        <v-col class="d-flex align-center" style="height: 3rem">
-          <img src="../static/ig.png" />
-          <p class="white--text my-4 mx-2">About</p>
-        </v-col>
-        <v-col class="d-flex align-center" style="height: 3rem">
-          <img src="../static/youtube.png" />
-          <p class="white--text my-4 mx-2">Our Partner</p>
-        </v-col>
-      </v-col>
-    </v-row>
-    <div class="line"></div>
-    <v-row style="background-color: #222222">
-      <v-card-text class="white--text d-flex align-self-center justify-center">&copy;Copyright 2021. All Rights
-        Reserved.
-      </v-card-text>
-      <v-col class="d-md-none .d-lg-flex justify-center d-flex align-center">
-        <img src="../static/facebook.png" class="mx-5" />
-        <img src="../static/ig.png" class="mx-5" />
-        <img src="../static/youtube.png" class="mx-5" />
-      </v-col>
-    </v-row>
+      </v-row>
+    </v-footer>
   </div>
 </template>
-<style scoped>
-.line {
-  background-color: aliceblue;
-  height: 8px;
-}
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sarabun');
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500&family=Poppins:ital,wght@0,100;0,200;1,100;1,200&display=swap');
 
-.bg {
-  background-color: #222222;
-}
 </style>

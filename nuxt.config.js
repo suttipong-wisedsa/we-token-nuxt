@@ -90,7 +90,8 @@ export default {
           title:"#767484",
           text:"#222222",
           texttitle:"#3B3B3B",
-          hometext:"#6B420B"
+          hometext:"#6B420B",
+          darkbg:"#222222"
         }
       }
     }

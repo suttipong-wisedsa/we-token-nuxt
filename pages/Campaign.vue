@@ -2,7 +2,8 @@
   <div>
     <v-app class="bg-1">
       <Nav />
-      <div class="mb-10">
+      <v-container>
+        <div class="mb-10">
         <v-row class="d-flex justify-center align-center" style="height:10vw">
           <div class="d-flex ">
             <h1 class="text-1 hidden-sm-and-down">WE TOKEN</h1>
@@ -37,7 +38,8 @@
             </v-col>
           </v-row>
         </v-container>
-      </div>
+      </div>  
+      </v-container>
       <div class="foot">
         <Footer />
       </div>
