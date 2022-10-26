@@ -4,8 +4,10 @@
       <div class="center">
         <h1>{{ title }}</h1>
         <div class="container">
-          <p class="mx-10 hometext--text" style="font-size:2vw; ">Discover the next-level digital asset</p>
-          <p class="hometext--text" style="font-size:2vw"> trading experience on a regulated platform.</p>
+          <h2 class="mx-10 hometext--text" style="font-size:2vw; font-family: 'Mitr', sans-serif;
+font-family: 'Poppins', sans-serif;">Discover the next-level digital asset</h2>
+          <h2 class="hometext--text" style="font-size:2vw; font-family: 'Mitr', sans-serif;
+font-family: 'Poppins', sans-serif;"> trading experience on a regulated platform.</h2>
         </div>
       </div>
     </div>

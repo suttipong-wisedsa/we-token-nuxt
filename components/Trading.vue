@@ -1,111 +1,24 @@
-<!-- <template>
-  <v-row>
-    <v-col>
-      <div :id="container_id"></div>
-    </v-col>
-  </v-row>
-</template>
-
-<script>
-const SCRIPT_ID = "tradingview-widget-script";
-const CONTAINER_ID = "trading-view-section";
-
-export default {
-  name: "Trading",
-  data() {
-    return {
-      container_id: CONTAINER_ID,
-    };
-  },
-  props: {
-    options: {
-      type: Object,
-    },
-  },
-  methods: {
-
-    canUseDOM() {
-      return (
-        typeof window !== "undefined" &&
-        window.document &&
-        window.document.createElement
-      );
-    },
-    resize(width, height) {
-      this.chart.resize(width, height);
-    },
-    getScriptElement() {
-      return document.getElementById(SCRIPT_ID);
-    },
-    updateOnloadListener(onload) {
-      const script = this.getScriptElement();
-      const oldOnload = script.onload;
-      return (script.onload = () => {
-        oldOnload();
-        onload();
-      });
-    },
-    scriptExists() {
-      return this.getScriptElement() !== null;
-    },
-    appendScript(onload) {
-      if (!this.canUseDOM()) {
-        onload();
-        return;
-      }
-
-      if (this.scriptExists()) {
-        if (typeof TradingView === "undefined") {
-          this.updateOnloadListener(onload);
-          return;
-        }
-        onload();
-        return;
-      }
-      const script = document.createElement("script");
-      script.id = SCRIPT_ID;
-      script.type = "text/javascript";
-      script.async = true;
-      script.src = "https://s3.tradingview.com/tv.js";
-      script.onload = onload;
-      document.getElementsByTagName("head")[0].appendChild(script);
-    },
-
-    initWidget() {
-      if (typeof TradingView === "undefined") {
-        return;
-      }
-
-      new window.TradingView.widget(
-        Object.assign({ container_id: this.container_id }, this.options)
-      );
-    },
-  },
-  mounted() {
-    this.appendScript(this.initWidget);
-  },
-};
-</script>
-
-
-<style>
-@media only screen and (max-width: 800px) {
-  #container_id {
-    height: 30vh !important;
-  }
-}
-</style> -->
 <template>
-  <div>
-    <div class="hideaaa">
-      <VueTradingView :options="{
-        symbol: 'NASDAQ:AAPL',
-        theme: 'dark',
-        autosize: true, //props trading responsive
-        height: 500,
-      }" />
-    </div>
-  </div>
+  <v-container>
+    <v-row>
+      <v-col>
+        <VueTradingView :options="{
+          width: 1070,
+          height: 500,
+          symbol: 'NASDAQ:AAPL',
+          interval: 'D',
+          timezone: 'Etc/UTC',
+          theme: 'dark',
+          style: '1',
+          locale: 'en',
+          toolbar_bg: '#f1f3f6',
+          enable_publishing: false,
+          allow_symbol_change: true,
+          autosize: $vuetify.breakpoint.xs,
+        }" />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
@@ -114,15 +27,25 @@ export default {
   components: {
     VueTradingView,
   },
-  data() {
-    return {
-      h: "true"
-    }
-  },
-  // methods: {
-  //  getIf(){
-  //   this.h = "fgfg"
-  //  }
+  // data() {
+  //   return {
+  //     candlestickSeries: [{
+  //       data: [
+  //         { time: '2020-10-19', open: 180.34, high: 180.99, low: 178.57, close: 179.85 },
+  //         { time: '2020-10-22', open: 180.82, high: 181.40, low: 177.56, close: 178.75 },
+  //         { time: '2020-10-23', open: 175.77, high: 179.49, low: 175.44, close: 178.53 },
+  //         { time: '2020-10-24', open: 178.58, high: 182.37, low: 176.31, close: 176.97 },
+  //         { time: '2020-10-25', open: 177.52, high: 180.50, low: 176.83, close: 179.07 },
+  //         { time: '2020-10-26', open: 176.88, high: 177.34, low: 170.91, close: 172.23 },
+  //         { time: '2020-10-29', open: 173.74, high: 175.99, low: 170.95, close: 173.20 },
+  //         { time: '2020-10-30', open: 173.16, high: 176.43, low: 172.64, close: 176.24 },
+  //         { time: '2020-10-31', open: 177.98, high: 178.85, low: 175.59, close: 175.88 },
+  //         { time: '2020-11-01', open: 176.84, high: 180.86, low: 175.90, close: 180.46 },
+  //         { time: '2020-11-02', open: 182.47, high: 183.01, low: 177.39, close: 179.93 },
+  //         { time: '2020-11-05', open: 181.02, high: 182.41, low: 179.30, close: 182.19 }
+  //       ]
+  //     }],
+  //   }
   // },
 }
 
@@ -130,11 +53,9 @@ export default {
 </script>
 
 <style scoped>
-/* @media screen and (max-width: 820px) {
-.hideaaa{
-  display: none;
+.hideaaa {
+  background-color: blue;
+  height: 100vh;
+  width: 50vw;
 }
-
-} */
-
 </style>

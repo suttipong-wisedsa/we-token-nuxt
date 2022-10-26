@@ -8,7 +8,7 @@
       <div class="menu">
         <ul class="list">
           <li v-for="(item, index) in menu" :key="index">
-            <a :href="item.path" class="text" style="color: aliceblue; font-family: ">{{ item.li }}</a>
+            <a :href="item.path" class="text mx-2" style="color: aliceblue; font-family: ">{{ item.li }}</a>
           </li>
           <!--TH toggle-->
           <div class="text1" @click="OnclickTab" style="display: flex; justify-content: center; align-items: center">

@@ -96,15 +96,22 @@ export default {
 }
 </style> -->
 <template>
-  <div>
-    <div class="hideaaa">
-      <VueTradingView :options="{
-        symbol: 'NASDAQ:AAPL',
-        theme: 'dark',
-        autosize: true, //props trading responsive
-        height: 500,
-      }" />
-    </div>
+  <div class="trad">{{ $vuetify.breakpoint.name }}
+    <!--บอกขนาดหน้าจอ-->
+    <VueTradingView :options="{
+      width: 1500,
+      height: 500,
+      symbol: 'NASDAQ:AAPL',
+      interval: 'D',
+      timezone: 'Etc/UTC',
+      theme: 'dark',
+      style: '1',
+      locale: 'en',
+      toolbar_bg: '#f1f3f6',
+      enable_publishing: false,
+      allow_symbol_change: true,
+      autosize: $vuetify.breakpoint.xs, //respone mobile
+    }" />
   </div>
 </template>
 
@@ -116,23 +123,35 @@ export default {
   },
   data() {
     return {
-      h: "true"
+      h: "false"
     }
   },
-  // methods: {
-  //  getIf(){
-  //   this.h = "fgfg"
-  //  }
-  // },
+
 }
 
 
 </script>
 
 <style scoped>
-@media screen and (max-width: 600px) {
-  .hideaaa {
+.hideaaa {
+  background-color: blue;
+  height: 100vh;
+  width: 50vw;
+}
+
+.trad {
+  background-color: blue;
+  width: 50%;
+  max-width: 100%;
+  width: 100%;
+  height: calc(100vh - 100px);
+  float: left;
+  margin: auto;
+}
+
+/* @media screen and (max-width: 600px) {
+  .trad {
     display: none;
   }
-}
+} */
 </style>

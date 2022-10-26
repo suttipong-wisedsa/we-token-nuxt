@@ -2,12 +2,14 @@
   <div class="main">
     <v-container>
       <v-col class="d-flex justify-center" style="height: 15vw">
-        <p class="homecard--text hidden-sm-and-down" style="font-size: 2vw; text-indent: 50px; color:#767484">
+        <p class="title--text hidden-sm-and-down" style="font-size: 2vw; text-indent: 50px; font-family: 'Mitr', sans-serif;
+">
           WE Token, a decentralized digital asset lending business developed
           by WESERVE PLATFORM Co.,Ltd. is a platform that incorporates
           centralized finance with decentralized finance (CeDeFi).
         </p>
-        <p class="homecard--text hidden-md-and-up " style="font-size: 3vw; text-indent: 50px; color:#767484;">
+        <p class="title--text hidden-md-and-up " style="font-size: 3vw; text-indent: 50px; font-family: 'Mitr', sans-serif;
+">
           WE Token, a decentralized digital asset lending business developed
           by WESERVE PLATFORM Co.,Ltd. is a platform that incorporates
           centralized finance with decentralized finance (CeDeFi).
@@ -40,7 +42,11 @@
         </v-col>
 
       </v-row>
-      <Trading />
+      <v-row>
+        <v-col class="my-15">
+          <Trading />
+        </v-col>
+      </v-row>
     </v-container>
   </div>
 </template>
@@ -79,13 +85,13 @@ export default {
         },
         {
           photo: "Weserve Token-06.png",
-          title: "+.5.30%",
-          detail: "24hr Charge",
+          title: "B45.38",
+          detail: "WE Token Price",
         },
         {
           photo: "Weserve Token-06.png",
-          title: "B45.38",
-          detail: "WE Token Price",
+          title: "+5.30%",
+          detail: "24hr Change",
         },
         {
           photo: "Weserve Token-06.png",

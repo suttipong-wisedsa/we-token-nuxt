@@ -16,7 +16,7 @@
 <style scoped>
 .responsive {
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
   height: auto;
 }
 </style>

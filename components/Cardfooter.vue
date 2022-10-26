@@ -3,11 +3,13 @@
     <v-container>
       <v-row class="mt-10">
         <v-col class="d-flex justify-center">
-          <h1 class="textcardfooter1--text">The most trusted cryptocurrency platform</h1>
+          <h1 class="textcardfooter1--text" style="font-family: 'Mitr', sans-serif;">The most trusted cryptocurrency
+            platform</h1>
         </v-col>
       </v-row>
       <v-col class="d-flex justify-center mb-10 ">
-        <p class="homecard--text">Here are a few reasons why you should choose WE Token</p>
+        <p class="homecard--text" style="font-family: 'Mitr', sans-serif;">Here are a few reasons why you should choose
+          WE Token</p>
       </v-col>
       <v-row justify="center">
         <v-col v-for="(item, index) in card" :key="index">
@@ -21,8 +23,8 @@
           </v-card>
           <v-row>
             <v-col class="my-5 px-5">
-              <h1 class="texttitle--text">{{ item.title }}</h1>
-              <p class="title--text">{{ item.detail }}</p>
+              <h1 class="texttitle--text" style="font-family: 'Mitr', sans-serif; ">{{ item.title }}</h1>
+              <p class="title--text" style="font-family: 'Mitr', sans-serif;">{{ item.detail }}</p>
             </v-col>
           </v-row>
         </v-col>
