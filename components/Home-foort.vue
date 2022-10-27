@@ -11,7 +11,7 @@
           <h1 class="text--text" style="font-size:2.5vw; font-family: 'Mitr', sans-serif;">WESERVE TOKEN (WE)</h1>
           <p class="texttitle--text" style="font-size:1.5vw; font-family: 'Mitr', sans-serif;">Got question? Contact us
             by scanning the QR code.</p>
-          <img src="../static/icon.jpg" @click="smoot()" style="cursor: pointer;" />
+          <img src="../static/icon.jpg" @click="smoot()" style="cursor: pointer;" class="smooth"/>
         </v-col>
       </v-row>
       <v-row class="hidden-md-and-up">
@@ -25,7 +25,7 @@
           <p class="texttitle--text my-3" style="font-size:3vw; font-family: 'Mitr', sans-serif;">Got
             question? Contact
             us by scanning the QR code.</p>
-          <img src="../static/icon.jpg" @click="smoot()" style="cursor: pointer;" />
+          <img src="../static/icon.jpg" @click="smoot()" style="cursor: pointer;" class="smoothmb"/>
         </v-col>
       </v-row>
       <!-- <div class="main" id="section2">
@@ -99,6 +99,8 @@ export default {
 .mt {
   margin-top: 20vh;
 }
-
-.mt1 {}
+.smooth{
+  margin-left: 25vw;
+  margin-top: 10vh;
+}
 </style>
