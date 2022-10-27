@@ -1,5 +1,7 @@
 <template>
   <nav class="bg">
+    <div class="main" id="section1">
+    </div>
     <div class="Navbar">
       <div class="logo">
         <img src="../static/photologo.png" alt="logo" class="mx-2" />

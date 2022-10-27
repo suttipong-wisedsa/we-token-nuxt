@@ -1,5 +1,4 @@
 import colors from 'vuetify/es5/util/colors'
-
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   buildModules: [
@@ -46,8 +45,18 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    // '@nuxtjs/apollo',
+    // '@nuxtjs/composition-api/module',
+    // '@nuxtjs/apollo,'
+    // '@nuxtjs/composition-api/module',
+    '@nuxtjs/apollo'
   ],
+  // apollo: {
+  //   clientConfigs: {
+  //     default: {
+  //       httpEndpoint: 'https://subgraphs.yuemmai.digital/subgraphs/name/jaynmfs/yes-subgraphs-mainnet/graphql'
+  //     }
+  //   },
+  // },
   // apollo: {
   //   clients: {
   //     default: {
