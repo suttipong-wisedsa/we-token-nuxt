@@ -16,10 +16,11 @@
           <div class="text1" @click="OnclickTab" style="display: flex; justify-content: center; align-items: center">
             <div class="mx-2 d-flex justify-center align-center">
               <div class="ml-1 mr-1">
-                <img class="hide" src="../static/united-states-of-america.png" @click="OnclickTab" />
+                <img v-if="englogo" class="hide" src="../static/united-states-of-america.png" @click="OnclickTab" />
+                <img v-if="thlogo" class="hide" src="../static/TH.jpg" style="height:1.5vw" @click="OnclickTab" />
               </div>
               <div>
-                <a class="hide" style="font-size: 1.2vw; color: aliceblue">English</a>
+                <a class="hide" style="font-size: 1.2vw; color: aliceblue">{{ $t("lg") }}</a>
               </div>
             </div>
           </div>
@@ -100,6 +101,8 @@ export default {
       th: "la",
       eng: "en",
       checkTab: false,
+      thlogo: false,
+      englogo: true
     };
   },
   computed: {
@@ -108,8 +111,17 @@ export default {
   methods: {
     ...mapMutations(["SET_LANG"]),
     changeLange(t) {
+      if (t === "la") {
+        this.thlogo = !this.thlogo
+        this.englogo = !this.englogo
+      }
+      // else if (t === "en") {
+      //   this.thlogo = !this.thlogo
+      // }
       this.SET_LANG(t);
       this.$i18n.locale = t;
+      this.checkTab = false;
+      this.check = false;
     },
     OnClick() {
       return (this.check = !this.check);
