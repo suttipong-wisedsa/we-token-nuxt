@@ -39,10 +39,10 @@
     <div v-if="checkTab">
       <v-card-text class="list-menu-th">
         <div class="eng ">
-          <a href="#" class="grey--text">English</a>
+          <a href="#" class="grey--text" @click="changeLange(eng)">English</a>
         </div>
         <div class="eng">
-          <a href="#" class="grey--text">ภาษาไทย</a>
+          <a href="#" class="grey--text" @click="changeLange(th)">ภาษาไทย</a>
         </div>
       </v-card-text>
     </div>
@@ -67,9 +67,9 @@
         <div class="line"></div>
         <div class="box-lg" style="display: flex; justify-content: center; margin-top: 1.5rem">
           <div class="d-flex">
-            <h2 class="white--text">English</h2>
+            <h2 class="white--text" @click="changeLange(eng)">English</h2>
             <h2 class="white--text mx-5">|</h2>
-            <h2 class="white--text">ภาษาไทย</h2>
+            <h2 class="white--text" @click="changeLange(th)">ภาษาไทย</h2>
           </div>
         </div>
       </ul>
@@ -78,6 +78,7 @@
 </template>
 
 <script>
+import { mapGetters, mapMutations } from "vuex";
 export default {
   name: "Nav",
   props: {
@@ -94,11 +95,22 @@ export default {
         { li: "News", path: "#" },
         { li: "Contact Us", path: "#" },
         { li: "Campaign", path: "/Campaign" },
+
       ],
+      th: "la",
+      eng: "en",
       checkTab: false,
     };
   },
+  computed: {
+    ...mapGetters(["locales", "locale"])
+  },
   methods: {
+    ...mapMutations(["SET_LANG"]),
+    changeLange(t) {
+      this.SET_LANG(t);
+      this.$i18n.locale = t;
+    },
     OnClick() {
       return (this.check = !this.check);
     },

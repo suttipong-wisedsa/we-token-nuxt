@@ -5,9 +5,9 @@
         <h1>{{ title }}</h1>
         <div class="container">
           <h2 class="mx-10 hometext--text" style="font-size:2vw; font-family: 'Mitr', sans-serif;
-font-family: 'Poppins', sans-serif;">Discover the next-level digital asset</h2>
+font-family: 'Poppins', sans-serif;">{{ $t("titlehome1") }}</h2>
           <h2 class="hometext--text" style="font-size:2vw; font-family: 'Mitr', sans-serif;
-font-family: 'Poppins', sans-serif;"> trading experience on a regulated platform.</h2>
+font-family: 'Poppins', sans-serif;">{{ $t("titlehome2") }}</h2>
         </div>
       </div>
     </div>

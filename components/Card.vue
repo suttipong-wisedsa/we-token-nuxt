@@ -4,15 +4,11 @@
       <v-col class="d-flex justify-center" style="height: 15vw">
         <p class="title--text hidden-sm-and-down" style="font-size: 2vw; text-indent: 50px; font-family: 'Mitr', sans-serif;
 ">
-          WE Token, a decentralized digital asset lending business developed
-          by WESERVE PLATFORM Co.,Ltd. is a platform that incorporates
-          centralized finance with decentralized finance (CeDeFi).
+          {{ $t("texthome") }}
         </p>
         <p class="title--text hidden-md-and-up " style="font-size: 3vw; text-indent: 50px; font-family: 'Mitr', sans-serif;
 ">
-          WE Token, a decentralized digital asset lending business developed
-          by WESERVE PLATFORM Co.,Ltd. is a platform that incorporates
-          centralized finance with decentralized finance (CeDeFi).
+          {{ $t("texthome") }}
         </p>
       </v-col>
       <v-row justify="center my-10">
