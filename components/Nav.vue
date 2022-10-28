@@ -16,8 +16,8 @@
           <div class="text1" @click="OnclickTab" style="display: flex; justify-content: center; align-items: center">
             <div class="mx-2 d-flex justify-center align-center">
               <div class="ml-1 mr-1">
-                <img v-if="englogo" class="hide" src="../static/united-states-of-america.png" @click="OnclickTab" />
-                <img v-if="thlogo" class="hide" src="../static/TH.jpg" style="height:1.5vw" @click="OnclickTab" />
+                <img v-if="englogo" class="hide" :src="require(`@/static/${img}`)" @click="OnclickTab" style="border-radius:100%; height:1.5vw; width:1.5vw"/>
+                <!-- <img v-if="thlogo" class="hide" src="../static/TH.jpg" style="height:1.5vw" @click="OnclickTab" /> -->
               </div>
               <div>
                 <a class="hide" style="font-size: 1.2vw; color: aliceblue">{{ $t("lg") }}</a>
@@ -102,7 +102,8 @@ export default {
       eng: "en",
       checkTab: false,
       thlogo: false,
-      englogo: true
+      englogo: true,
+      img:"united-states-of-america.png"
     };
   },
   computed: {
@@ -111,13 +112,19 @@ export default {
   methods: {
     ...mapMutations(["SET_LANG"]),
     changeLange(t) {
-      if (t === "la") {
-        this.thlogo = !this.thlogo
-        this.englogo = !this.englogo
-      }
+      // if (t === "la") {
+      //   this.thlogo = !this.thlogo
+      //   this.englogo = !this.englogo
+      // }
       // else if (t === "en") {
       //   this.thlogo = !this.thlogo
       // }
+      if(t==="la"){
+        this.img = "TH.jpg"
+      }
+      else if(t==="en"){
+        this.img = "united-states-of-america.png"
+      }
       this.SET_LANG(t);
       this.$i18n.locale = t;
       this.checkTab = false;
@@ -128,6 +135,7 @@ export default {
     },
     OnclickTab() {
       this.checkTab = !this.checkTab;
+      
     },
   },
 };
