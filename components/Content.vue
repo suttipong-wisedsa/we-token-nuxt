@@ -11,12 +11,11 @@ font-family: 'Poppins', sans-serif;">{{ $t("titlehome2") }}</h2>
         </div>
       </div>
     </div>
-    <Card />
-    <!-- <Trading /> -->
+    <Card /> 
     <Partners />
-    <News />
+   <News />
     <Cardfooter />
-    <HomeFoort />
+    <HomeFoort /> 
   </v-app>
 </template>
 

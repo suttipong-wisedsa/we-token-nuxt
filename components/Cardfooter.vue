@@ -17,7 +17,7 @@
           <v-card height="189.66" width="250" class=" mx-auto cardfooter d-flex align-center">
             <v-row justify="center">
               <v-col class="d-flex justify-center align-center ">
-                <img :src="require(`@/static/${item.photo}`)" />
+                <img :src="require(`@/static/${item.photo}`)" :style="`width:${item.width}px`"/>
               </v-col>
             </v-row>
           </v-card>
@@ -51,9 +51,10 @@ export default {
           detail: "Cryptocurrency stored on our servers is covered by our insurance policy.",
         },
         {
-          photo: "card3.png",
+          photo: "card1.png",
           title: "Industry best practices",
           detail: "WE Token supports a variety of the most popular digital currencies.",
+          width:140
         },
       ],
       text: "WE Token, a decentralized digital asset lending business developed by WESERVE PLATFORM Co.,Ltd. is a platform that incorporates centralized finance with decentralized finance (CeDeFi).",

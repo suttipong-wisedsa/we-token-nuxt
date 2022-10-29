@@ -1,33 +1,56 @@
 <template>
   <div>
-    <div class="background center">
-      <v-row class="hidden-sm-and-down">
-        <v-col>
-          <img src="../static/bass1.png" class="md1" />
-          <img src="../static/bass2.png" class="md" />
-        </v-col>
-        <v-col class="text-center mt-5" id="section2">
-          <img src="../static/bass3.png" style="height:15vw" class="mt" />
-          <h1 class="text--text" style="font-size:2.5vw; font-family: 'Mitr', sans-serif;">WESERVE TOKEN (WE)</h1>
-          <p class="texttitle--text" style="font-size:1.5vw; font-family: 'Mitr', sans-serif;">Got question? Contact us
-            by scanning the QR code.</p>
-          <img src="../static/icon.jpg" @click="smoot()" style="cursor: pointer;" class="smooth"/>
-        </v-col>
-      </v-row>
-      <v-row class="hidden-md-and-up">
+    <div class="background center" id="section2">
+      <v-content class="hidden-sm-and-down">
+        <v-row>
+          <v-col class="ml-15 mt-2">
+            <img src="../static/bass1.png" class="md1" />
+            <img src="../static/bass2.png" class="md" />
+          </v-col>
+          <v-col>
+            <img src="../static/bass3.png" style="height: 15vw" class="mt" />
+            <v-card-text class="text-center my-5">
+              <h1
+              class="text--text"
+              style=" font-size: 2.5vw; font-family: 'Mitr', sans-serif"
+            >
+              WESERVE TOKEN (WE)
+            </h1>
+            </v-card-text>
+            <v-card-text>
+              <p
+              class="texttitle--text"
+              style="font-size: 1.5vw; font-family: 'Mitr', sans-serif"
+            >
+              Got question? Contact us by scanning the QR code.
+            </p>
+            </v-card-text>
+            <img
+              src="../static/icon.jpg"
+              @click="smoot()"
+              style="cursor: pointer; border-radius:100%;"
+              class="smooth"
+            />
+          </v-col>
+        </v-row>
+      </v-content>
+      <v-container class="hidden-md-and-up">
         <v-col>
           <img src="../static/bass1.png" class="md11" />
           <img src="../static/bass2.png" class="mdd" />
         </v-col>
         <v-col class="text-center mt-10" id="section2">
-          <img src="../static/bass3.png" style="height:35vw" />
-          <h1 class="text--text my-5" style="font-size:4vw; font-family: 'Mitr', sans-serif;">WESERVE TOKEN (WE)</h1>
-          <p class="texttitle--text my-3" style="font-size:3vw; font-family: 'Mitr', sans-serif;">Got
-            question? Contact
-            us by scanning the QR code.</p>
-          <img src="../static/icon.jpg" @click="smoot()" style="cursor: pointer;" class="smoothmb"/>
+          <img src="../static/bass3.png" style="height: 35vw" />
         </v-col>
-      </v-row>
+        <v-col class="d-flex justify-center my-15">
+          <img
+            src="../static/icon.jpg"
+            @click="smoot()"
+            style="cursor: pointer; border-radius:100%;"
+            class="smoothmb"
+          />
+        </v-col>
+      </v-container>
       <!-- <div class="main" id="section2">
       <h2>Section 2</h2>
       <a href="#section1"> Me to SmClickooth Scroll to Section 1 Above</a>
@@ -43,7 +66,7 @@ export default {
       window.location.href = "#section1";
     },
   },
-}
+};
 </script>
 <style scoped>
 .background {
@@ -71,14 +94,14 @@ export default {
   margin-left: -8vw;
   margin-top: 5vh;
   width: 12vw;
-  margin-top: 18vw;
+  margin-top: 13vw;
 }
 
 .md1 {
   position: relative;
   width: 35vw;
-  margin-left: 13vw;
-  margin-top: 13vw;
+  margin-left: 2vw;
+  margin-top: 8vw;
 }
 
 .mdd {
@@ -97,10 +120,13 @@ export default {
 }
 
 .mt {
-  margin-top: 20vh;
+  margin-left: 14vw;
+  margin-top: 25vh;
+
 }
-.smooth{
+.smooth {
   margin-left: 25vw;
   margin-top: 10vh;
 }
+
 </style>
