@@ -3,9 +3,11 @@
     <div class="main" id="section1">
     </div>
     <div class="Navbar">
-      <div class="logo">
-        <img src="../static/photologo.png" alt="logo" class="mx-2" />
-        <h2 class="d-flex justify-center align-center">WE TOKEN</h2>
+      <div style="display:flex; justify-content: center;">
+        <img src="../static/photologo.png" width="50" height="50" class="mt-3 ml-3 hidden-md-and-up"/>
+        <img src="../static/photologo.png" width="70" height="80" class="mt-3 ml-3 hidden-sm-and-down"/>
+        <h1 class="mt-5 ml-3 hidden-md-and-up">WE TOKEN</h1>
+        <h1 class="mt-8 ml-3 hidden-sm-and-down">WE TOKEN</h1>
       </div>
       <div class="menu">
         <ul class="list">
@@ -145,4 +147,8 @@ export default {
 
 <style scoped>
 @import "../assets/Nav.css";
+.responsivelogo {
+  width: 100%;
+  height: auto;
+}
 </style>
