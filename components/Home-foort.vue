@@ -32,7 +32,7 @@
               class="smooth"
             />
           </v-col>
-        </v-row>
+        </v-row> 
       </v-content>
       <v-container class="hidden-md-and-up">
         <v-col>

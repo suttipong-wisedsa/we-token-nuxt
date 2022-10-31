@@ -1,8 +1,8 @@
 <template>
-  <div>
-    <div class="darkbg">
-      <v-footer>
-        <v-row class="darkbg">
+  <div >
+    <div>
+      <v-footer class="darkbg">
+        <v-row >
           <v-col class="mx-15">
             <v-col class="d-flex align-center">
               <img src="../static/Weserve Token-06.png" />
@@ -15,8 +15,7 @@
             </v-col>
           </v-col>
           <v-spacer class="hidden-sm-and-down"></v-spacer>
-          <v-spacer class="hidden-sm-and-down"></v-spacer>
-          <v-col class="mx-10 d-md-non text-center">
+          <v-col class=" d-md-non text-center">
             <v-col class="mx-10">
               <h2 class="white--text my-5">Company</h2>
               <p class="white--text my-5">About</p>
@@ -24,16 +23,17 @@
             </v-col>
           </v-col>
           <v-spacer class="d-md-none .d-lg-flex"></v-spacer>
-          <v-col class="mx-10 d-md-non text-center">
+          <v-col class="mr-15 d-md-non text-center">
             <v-col class="mx-10">
-              <h2 class="white--text my-5">Company</h2>
-              <p class="white--text my-5">About</p>
-              <p class="white--text my-5">Our Partner</p>
+              <h2 class="white--text my-5">Support</h2>
+              <p class="white--text my-5">WE Token NEWS</p>
+              <p class="white--text my-5">FAQ</p>
             </v-col>
           </v-col>
           <v-spacer class="d-md-none .d-lg-flex"></v-spacer>
+          
           <v-col class="hidden-sm-and-down">
-            <h2 class="white--text my-4">Social Media</h2>
+            <h2 class="white--text mt-8">Social Media</h2>
             <v-col class="d-flex align-center" style="height: 3rem">
               <img src="../static/facebook.png" />
               <p class="white--text my-3 mx-2">Company</p>
@@ -50,8 +50,8 @@
         </v-row>
       </v-footer>
     </div>
-    <v-footer>
-      <v-row style="background-color: #222222; border-top: 1px solid #ffffff;">
+    <v-footer style="background-color: #222222; border-top: 1px solid #ffffff;">
+      <v-row >
         <v-card-text class="white--text d-flex align-self-center justify-center"
           >&copy;Copyright 2021. All Rights Reserved.
         </v-card-text>

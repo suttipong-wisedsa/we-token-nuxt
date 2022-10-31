@@ -1,9 +1,12 @@
 import colors from 'vuetify/es5/util/colors'
+
 export default {
+  
   ssr: false,
   // Global page headers: https://go.nuxtjs.dev/config-head
   buildModules: [
     '@nuxt/postcss8',
+    'nuxt-graphql-request',
     // ...
   ],
   head: {
@@ -57,7 +60,7 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: 'https://rickandmortyapi.com/graphql',
+        httpEndpoint: 'https://rickandmortyapi.com/graphql/',
       },
     },
   },

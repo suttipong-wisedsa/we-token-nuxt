@@ -10,14 +10,13 @@
       <div class="menu">
         <ul class="list">
           <li v-for="(item, index) in menu" :key="index">
-            <a :href="item.path" class="text mx-2" style="color: aliceblue; font-family: ">{{ item.li }}</a>
+            <a :href="item.path" class="text mx-4" style="color: aliceblue; font-family: ">{{ item.li }}</a>
           </li>
           <!--TH toggle-->
           <div class="text1" @click="OnclickTab" style="display: flex; justify-content: center; align-items: center">
             <div class="mx-2 d-flex justify-center align-center">
               <div class="ml-1 mr-1">
-                <img v-if="englogo" class="hide" :src="require(`@/static/${img}`)" @click="OnclickTab" style="border-radius:100%; height:1.5vw; width:1.5vw"/>
-                <!-- <img v-if="thlogo" class="hide" src="../static/TH.jpg" style="height:1.5vw" @click="OnclickTab" /> -->
+                <img  class="hide" :src="require(`@/static/${img}`)" @click="OnclickTab" style="border-radius:100%; height:1.5vw; width:1.5vw"/>
               </div>
               <div>
                 <a class="hide" style="font-size: 1.2vw; color: aliceblue">{{ $t("lg") }}</a>
@@ -81,6 +80,7 @@
 <script>
 import { mapGetters, mapMutations } from "vuex";
 export default {
+ 
   name: "Nav",
   props: {
     check: {
@@ -103,7 +103,7 @@ export default {
       checkTab: false,
       thlogo: false,
       englogo: true,
-      img:"united-states-of-america.png"
+      img:"united-states-of-america.png",
     };
   },
   computed: {
@@ -125,10 +125,12 @@ export default {
       else if(t==="en"){
         this.img = "united-states-of-america.png"
       }
+      this.englogo=false
       this.SET_LANG(t);
       this.$i18n.locale = t;
       this.checkTab = false;
       this.check = false;
+      this.count=false
     },
     OnClick() {
       return (this.check = !this.check);
