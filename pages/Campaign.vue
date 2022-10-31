@@ -31,7 +31,7 @@
                   <img :src="require(`@/static/${i.url}`)" alt="img" class="responsiveMB" />
                   <v-card-text class="d-flex">
                     <img src="../static/Weserve Logo-01.png" />
-                    <h1 style="font-size: 1vw" class="mx-1">{{ i.title }}</h1>
+                    <h1 style="font-size: 3vw" class="mx-1">{{ i.title }}</h1>
                   </v-card-text>
                 </v-card>
               </div>

@@ -14,6 +14,7 @@
   .eng:hover a{
     color: #ffffff;
   }
+  
   .list-menu-th {
     position: absolute;
     z-index: 1;
@@ -63,6 +64,7 @@
   }
   .hide{
     margin-top: 1vh;
+    
   }
   .text {
     text-decoration: none;

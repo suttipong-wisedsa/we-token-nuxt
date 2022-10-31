@@ -7,6 +7,25 @@
   "contact Us":"Contact Us",
   "campaign":"Campaign",
   "lg":"English",
-  "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id nisl finibus Leo porttitor scelerisque. Pellentesque suscipit laoreet mauris, a dignissim ex lacinia nec. Phasellus sed est quis quam interdum faucibus nec sed enim. Ut bibendum volutpat augue at porta. Vivamus placerat viverra lectus, nec mollis sem volutpat a. Duis at feugiat enim, consectetur mollis nulla. Nam felis libero, tincidunt a ultricies sit amet, ultricies sit amet felis. Phasellus at congue dolor. Mauris sed nibh et est ornare tincidunt. Sed ut tristique dui. Pellentesque iaculis sagittis lacinia. Nunc ultricies, quam et imperdiet consectetur, diam erat tincidunt ante, ut tempus felis orci et metus. Sed a diam tempor, ultricies nibh a, congue massa. Nam a justo urna."
+  "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id nisl finibus Leo porttitor scelerisque. Pellentesque suscipit laoreet mauris, a dignissim ex lacinia nec. Phasellus sed est quis quam interdum faucibus nec sed enim. Ut bibendum volutpat augue at porta. Vivamus placerat viverra lectus, nec mollis sem volutpat a. Duis at feugiat enim, consectetur mollis nulla. Nam felis libero, tincidunt a ultricies sit amet, ultricies sit amet felis. Phasellus at congue dolor. Mauris sed nibh et est ornare tincidunt. Sed ut tristique dui. Pellentesque iaculis sagittis lacinia. Nunc ultricies, quam et imperdiet consectetur, diam erat tincidunt ante, ut tempus felis orci et metus. Sed a diam tempor, ultricies nibh a, congue massa. Nam a justo urna.",
+  "img":"require(`@/static/${imglg}`)",
+  "location":"32/199 Phoonphol rd., Taladnueh, Muang, Phuket 83000",
+  "company":"Company",
+  "about":"About",
+  "ourpartner":"Our Partner",
+  "support":"Support",
+  "wetokennews":"WE Token NEWS",
+  "faq":"FAQ",
+  "socialmedia":"Social Media",
+  "partner":"Trusted by Our Partners & Investors",
+  "trusted":"The most trusted cryptocurrency platform",
+  "reason":"Here are a few reasons why you should choose WE Token",
+  "storage":"Secure storage",
+  "titlestotage":"We store the vast majority of the digital assets in secure offline storage.",
+  "protected":"Protected by insurance",
+  "titleprotected":"Cryptocurrency stored on our servers is covered by our insurance policy.",
+  "industry":"Industry best practices",
+  "titleindustry":"WE Token supports a variety of the most popular digital currencies.",
+  "we":"Got question? Contact us by scanning the QR code."
 }
 

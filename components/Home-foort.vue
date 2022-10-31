@@ -21,8 +21,8 @@
               <p
               class="texttitle--text"
               style="font-size: 1.5vw; font-family: 'Mitr', sans-serif"
-            >
-              Got question? Contact us by scanning the QR code.
+             >
+              {{$t("we")}}
             </p>
             </v-card-text>
             <img

@@ -5,7 +5,7 @@
     <div class="Navbar">
       <div style="display:flex; justify-content: center;">
         <img src="../static/photologo.png" width="50" height="50" class="mt-3 ml-3 hidden-md-and-up"/>
-        <img src="../static/photologo.png" width="70" height="80" class="mt-3 ml-3 hidden-sm-and-down"/>
+        <img src="../static/photologo.png" width="65" height="70" class="mt-4 ml-3 hidden-sm-and-down"/>
         <h1 class="mt-5 ml-3 hidden-md-and-up">WE TOKEN</h1>
         <h1 class="mt-8 ml-3 hidden-sm-and-down">WE TOKEN</h1>
       </div>
@@ -21,7 +21,7 @@
                 <img  class="hide" :src="require(`@/static/${img}`)" @click="OnclickTab" style="border-radius:100%; height:1.5vw; width:1.5vw"/>
               </div>
               <div>
-                <a class="hide" style="font-size: 1.2vw; color: aliceblue">{{ $t("lg") }}</a>
+                <a class="hide" style="font-size: calc(1.2vh + 10px); color: aliceblue">{{ $t("lg") }}</a>
               </div>
             </div>
           </div>

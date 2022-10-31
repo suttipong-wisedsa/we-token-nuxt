@@ -3,10 +3,10 @@
     <v-container>
       <v-row class="d-flex justify-center align-center" style="height: 10rem">
         <h2 style="font-size: 2vw" class="white--text hidden-sm-and-down">
-          Trusted by Our Partners & Investors
+          {{$t("partner")}}
         </h2>
         <h2 style="font-size: 5vw" class="white--text hidden-md-and-up">
-          Trusted by Our Partners & Investors
+          {{$t("partner")}}
         </h2>
       </v-row>
       <v-row class="d-flex justify-center align-center">

@@ -4,15 +4,28 @@
     <div style="background-color: #f4f4f4; width: 100%">
       <v-container>
         <v-row class="my-10">
-          <v-col class="d-flex align-center">
+          <div class="hidden-sm-and-down">
+            <v-col class="d-flex align-center ">
             <a href="./Campaign" style="text-decoration: none; font-size: calc(1.5vh + 7px); color: #767484;"
               class="title--text">WE TOKEN CAMPAIGN</a>
             <h1 style="font-size: 2rem" class="text-center mx-3 textcontent--text">></h1>
             <img src="../static/Weserve Token-06.png" style="height: 33px; width: 34px" />
             <a style="font-size: calc(1vh + 7px); color: #fdd000" class="mx-2">WE TOKEN X</a>
             <img src="../static/Weserve Logo-01.png" style="height: 33px; width: 34px" />
-            <a style="font-size: calc(1vh + 7px); color: #fdd000" class="mx-2">WE SMART EXPRESS</a>
+            <a style="font-size: calc(1vh + 7px); color: #fdd000" class="mx-2">WE SERVE</a>
           </v-col>
+          </div>
+          <div class="hidden-md-and-up">
+            <v-col class="d-flex align-center ">
+            <a href="./Campaign" style="text-decoration: none; font-size: calc(1vh + 7px); color: #767484;"
+              class="title--text">WE TOKEN CAMPAIGN</a>
+            <h1 style="font-size: 2rem" class="text-center mx-3 textcontent--text">></h1>
+            <img src="../static/Weserve Token-06.png" style="height: 33px; width: 34px" />
+            <a style="font-size: calc(0.7vh + 7px); color: #fdd000" class="mx-2">WE TOKEN X</a>
+            <img src="../static/Weserve Logo-01.png" style="height: 33px; width: 34px" />
+            <a style="font-size: calc(0.7vh + 7px); color: #fdd000" class="mx-2">WE SMART EXPRESS</a>
+          </v-col>
+          </div>  
         </v-row>
         <v-card class="my-10" style="box-shadow: 0px 5px 20px #00000029;">
           <v-container>
@@ -30,17 +43,17 @@
                 <h3 style="color:#A0A0A0" class="mx-1">01 Oct, 2022</h3>
               </v-card-text>
               <v-card-text>
-                <p style="font-size: calc(1vh + 10px); text-indent: 50px; font-family: 'Sarabun';">
+                <p style="font-size: calc(1vh + 10px); text-indent: 50px; font-family: 'Sarabun', sans-serif;">
                   {{ $t("text") }}
                 </p>
               </v-card-text>
               <v-card-text>
-                <p style="font-size: calc(1vh + 10px); text-indent: 50px; font-family: 'Sarabun';">
+                <p style="font-size: calc(1vh + 10px); text-indent: 50px; font-family: 'Sarabun', sans-serif;">
                   {{ $t("text") }}
                 </p>
               </v-card-text>
               <v-card-text>
-                <p style="font-size: calc(1vh + 10px); text-indent: 50px; font-family: 'Sarabun';">
+                <p style="font-size: calc(1vh + 10px); text-indent: 50px; font-family: 'Sarabun', sans-serif;">
                   {{ $t("text") }}
                 </p>
               </v-card-text>
@@ -63,7 +76,7 @@
                 <v-card-text class="d-flex justify-space-between mb-15">
                   <v-card-text class="d-flex">
                     <img src="../static/Weserve Logo-01.png" />
-                    <h1 style="font-size: calc(1vh + 10px)">{{ i.title }}</h1>
+                    <h1 style="font-size: calc(1vh + 10px)" class="ml-2">{{ i.title }}</h1>
                   </v-card-text>
                 </v-card-text>
               </v-card>
@@ -80,7 +93,7 @@
 @import url('https://fonts.googleapis.com/css?family=Sarabun');
 @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500&family=Poppins:ital,wght@0,100;0,200;1,100;1,200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;1,100&display=swap');
 .bg-img {
   background-image: url("../static/bigbg.png");
 }
