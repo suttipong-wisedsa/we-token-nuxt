@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <Nav :check="check" />
+    <Nav />
     <Content />
   </v-app>
 </template>
@@ -12,15 +12,8 @@ import Content from '~/components/Content.vue'
 // import gql from 'graphql-tag'
 
 export default {
-
   name: "IndexPage",
   components: { Nav, Content, },
-  data() {
-    return {
-      check: false,
-
-    }
-  },
 }
 </script>
 <style>

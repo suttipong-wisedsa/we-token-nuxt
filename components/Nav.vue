@@ -84,13 +84,13 @@ import { mapGetters, mapMutations } from "vuex";
 export default {
  
   name: "Nav",
-  props: {
-    check: {
-      type: Boolean,
-      required: true,
-      default: false,
-    },
-  },
+  // props: {
+  //   check: {
+  //     type: Boolean,
+  //     required: true,
+  //     default: false,
+  //   },
+  // },
   data() {
     return {
       menu: [
@@ -106,6 +106,7 @@ export default {
       thlogo: false,
       englogo: true,
       img:"united-states-of-america.png",
+      check:false
     };
   },
   computed: {
